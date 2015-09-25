@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2fr-Nt-ZS8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Demo - UIButton-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo2_UIButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1c-XD-KEA">
+                                <rect key="frame" x="60" y="130" width="200" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0pZ-bP-8AN"/>
+                                    <constraint firstAttribute="height" constant="40" id="5oO-dW-7xC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Click Me"/>
+                                <connections>
+                                    <action selector="buttonClickMeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRf-c1-0rX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zg-ll-HnU">
+                                <rect key="frame" x="110.5" y="190" width="100" height="100"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="N4A-hs-7Hy"/>
+                                    <constraint firstAttribute="height" constant="100" id="Ns6-28-DDp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfJ-HN-4eG">
+                                <rect key="frame" x="60" y="298" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Me-Sd-Vsr"/>
+                                    <constraint firstAttribute="width" constant="200" id="Yed-bz-TgE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L1c-XD-KEA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Ga-8C-fCN"/>
+                            <constraint firstItem="0zg-ll-HnU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4dX-7t-NsQ"/>
+                            <constraint firstItem="RfJ-HN-4eG" firstAttribute="top" secondItem="0zg-ll-HnU" secondAttribute="bottom" constant="8" id="Ht9-I6-9P7"/>
+                            <constraint firstItem="0zg-ll-HnU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JAw-wt-Pnd"/>
+                            <constraint firstItem="RfJ-HN-4eG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lxu-Bx-QfL"/>
+                            <constraint firstItem="0zg-ll-HnU" firstAttribute="top" secondItem="L1c-XD-KEA" secondAttribute="bottom" constant="20" id="tk4-Qj-oW4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo - UIButton" id="ZAw-kk-tSP"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="buttonClickMe" destination="L1c-XD-KEA" id="cAx-cU-AW2"/>
+                        <outlet property="clickCountLabel" destination="0zg-ll-HnU" id="MOD-lJ-F8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KVj-Cn-HtV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2fr-Nt-ZS8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xr0-WL-4LJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gMs-Hf-u2l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DjP-3c-EOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="366"/>
+        </scene>
+    </scenes>
+</document>
