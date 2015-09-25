@@ -13,14 +13,14 @@ This repository consist sample project for various UI element used within iOS ap
 ## Demo-1: UILabel
 Sample project demonstrate label usage.
 
-![ScreenShot iPhone5](../master/Screenshots/demo1-1t.png)
-![ScreenShot iPhone5](../master/Screenshots/demo1-2t.png)
+![ScreenShot](../master/Screenshots/demo1-1t.png)
+![ScreenShot](../master/Screenshots/demo1-2t.png)
 
 ## Demo-2: UIButton
 Sample project demonstrate button usage and how to respond click action.
 
-![ScreenShot iPhone5](../master/Screenshots/demo2-1t.png)
-![ScreenShot iPhone5](../master/Screenshots/demo3-2t.png)
+![ScreenShot](../master/Screenshots/demo2-1t.png)
+![ScreenShot](../master/Screenshots/demo2-2t.png)
 
 
 ## Demo-3: will be added soon.
