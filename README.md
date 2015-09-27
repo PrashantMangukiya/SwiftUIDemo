@@ -12,7 +12,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-4: [UITextField](#demo-4-uitextfield)
 + Demo-5: [UITextView](#demo-5-uitextview)
 + Demo-6: [UISlider](#demo-6-uislider)
-+ Demo-7: UISwitch
++ Demo-7: [UISwitch](#demo-7-uiswitch)
 + Demo-8: UIActivityIndicatorView
 + Demo-9: UIProgressView
 + Demo-10: UIStepper
@@ -44,25 +44,28 @@ Sample project that demonstrate how to use Segmented Control.
 ![ScreenShot](../master/Screenshots/demo3-2t.png)
 
 ## Demo-4: UITextField
-Sample project that demonstrate how to use text field delegate, close keyboard when clicked anywhere on the screen, move editing from one text field to next text field when Next button clicked within keyboard.
+Sample project that demonstrate how to use UITextField with delegate, close keyboard when clicked anywhere on the screen, move editing from one text field to next text field when Next button clicked within keyboard.
 
 ![ScreenShot](../master/Screenshots/demo4-1t.png)
 ![ScreenShot](../master/Screenshots/demo4-2t.png)
 
 ## Demo-5: UITextView
-Sample project that demonstrate how to use text view that allows multi line editing and support newline character. This demo also shows how to close the keyborad by placing action within UIButton (Note: Return key within keyboard will not close the keyboard for textview becuase return key will add newline "\n" character). Newline character support must for UITextView due it's usage for long text having paragraph, so we must close keyboard by any other way that appropriate.
+Sample project demonstrate how to use UITextView that allows multi line editing and support newline character. This demo also shows how to close the keyborad by placing action within UIButton (Note: Return key within keyboard will not close the keyboard for textview becuase return key will add newline "\n" character). Newline character support must for UITextView due it's usage for long text having paragraph, so we must close keyboard by any other way that appropriate.
 
 ![ScreenShot](../master/Screenshots/demo5-1t.png)
 ![ScreenShot](../master/Screenshots/demo5-2t.png)
 
 ## Demo-6: UISlider
-Sample project that demonstrate how to use UISlider within swift based application. It shows how to read slider value and use it for changing font size etc.
+Sample project demonstrate how to use UISlider within swift based application. It shows how to read slider value and use it for changing font size etc.
 
 ![ScreenShot](../master/Screenshots/demo6-1t.png)
 ![ScreenShot](../master/Screenshots/demo6-2t.png)
 
 ## Demo-7: UISwitch
-coming soon
+Sample project demonstrate how to use UISwitch, set various properties or value for UITextLabel based on UISwitch toggle status.
+
+![ScreenShot](../master/Screenshots/demo7-1t.png)
+![ScreenShot](../master/Screenshots/demo7-2t.png)
 
 ## Demo-8: UIActivityIndicatorView
 coming soon
