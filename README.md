@@ -1,5 +1,5 @@
 # Swift Based UI Demo
-This repository consist sample project for various UI element used within iOS application. All demo/sample build using Swift.
+This repository consist small Xcode project for various UI element used within iOS application. All sample build in such a way that you will get clear idea how to use practically each UI Element within swift based application. You can use this free for personal or commercial use.
 
 ### Platform & Supported Device
 + Swift 2, Xcode 7, iOS 9
@@ -10,7 +10,7 @@ This repository consist sample project for various UI element used within iOS ap
 + Demo-2: [UIButton](#demo-2-uibutton)
 + Demo-3: [UISegmentedControl](#demo-3-uisegmentedcontrol)
 + Demo-4: [UITextField](#demo-4-uitextfield)
-+ Demo-5: UITextView
++ Demo-5: [UITextView](#demo-5-uitextview)
 + Demo-6: UISlider
 + Demo-7: UISwitch
 + Demo-8: UIActivityIndicatorView
@@ -50,7 +50,10 @@ Sample project that demonstrate how to use text field delegate, close keyboard w
 ![ScreenShot](../master/Screenshots/demo4-2t.png)
 
 ## Demo-5: UITextView
-coming soon
+Sample project that demonstrate how to use text view that allows multi line editing and support newline character. This demo also shows how to close the keyborad by placing action within UIButton (Note: Return key within keyboard will not close the keyboard for textview becuase return key will add newline "\n" character). Newline character support must for UITextView due it's usage for long text having paragraph, so we must close keyboard by any other way that appropriate.
+
+![ScreenShot](../master/Screenshots/demo5-1t.png)
+![ScreenShot](../master/Screenshots/demo5-2t.png)
 
 ## Demo-6: UISlider
 coming soon
@@ -87,4 +90,7 @@ coming soon
 
 ## Demo-17: UIVisualEffectView
 coming soon
+
+## License
+SwiftUIDemo is available under the MIT license. See the LICENSE file for more info.
 
