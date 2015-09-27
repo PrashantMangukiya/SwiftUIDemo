@@ -9,7 +9,7 @@ This repository consist sample project for various UI element used within iOS ap
 + Demo-1: [UILabel](#demo-1-uilabel)
 + Demo-2: [UIButton](#demo-2-uibutton)
 + Demo-3: [UISegmentedControl](#demo-3-uisegmentedcontrol)
-+ Demo-4: UITextField
++ Demo-4: [UITextField](#demo-4-uitextfield)
 + Demo-5: UITextView
 + Demo-6: UISlider
 + Demo-7: UISwitch
@@ -44,7 +44,10 @@ Sample project that demonstrate how to use Segmented Control.
 ![ScreenShot](../master/Screenshots/demo3-2t.png)
 
 ## Demo-4: UITextField
-coming soon
+Sample project that demonstrate how to use text field delegate, close keyboard when clicked anywhere on the screen, move editing from one text field to next text field when Next button clicked within keyboard.
+
+![ScreenShot](../master/Screenshots/demo4-1t.png)
+![ScreenShot](../master/Screenshots/demo4-2t.png)
 
 ## Demo-5: UITextView
 coming soon
