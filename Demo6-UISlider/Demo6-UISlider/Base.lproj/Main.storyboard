@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kBZ-b5-33j">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--UISlider-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo6_UISlider" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" minimumValueImage="Audio1" maximumValueImage="Audio2" translatesAutoresizingMaskIntoConstraints="NO" id="dku-eH-rh7">
+                                <rect key="frame" x="18" y="84" width="284" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zZ9-zD-coZ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="mySlider1Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="B6f-so-Czh"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg7-yg-gXd">
+                                <rect key="frame" x="20" y="134" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Et-4h-cOa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="10" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CVh-CT-ISn">
+                                <rect key="frame" x="18" y="204" width="284" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4z6-Am-5Th"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="mySlider2Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="9lz-lY-CkT"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfz-uM-1cD">
+                                <rect key="frame" x="20" y="244" width="280" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="78L-eN-SaH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pfz-uM-1cD" secondAttribute="trailing" constant="20" id="4a1-46-hRN"/>
+                            <constraint firstItem="pfz-uM-1cD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5Bd-VL-Qze"/>
+                            <constraint firstAttribute="trailing" secondItem="CVh-CT-ISn" secondAttribute="trailing" constant="20" id="DpB-kg-gxw"/>
+                            <constraint firstAttribute="trailing" secondItem="pg7-yg-gXd" secondAttribute="trailing" constant="20" id="FpF-2G-6ah"/>
+                            <constraint firstAttribute="trailing" secondItem="dku-eH-rh7" secondAttribute="trailing" constant="20" id="Q5K-rr-nxE"/>
+                            <constraint firstItem="CVh-CT-ISn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="UFM-sa-kgn"/>
+                            <constraint firstItem="pfz-uM-1cD" firstAttribute="top" secondItem="CVh-CT-ISn" secondAttribute="bottom" constant="10" id="aw2-7v-mjV"/>
+                            <constraint firstItem="pg7-yg-gXd" firstAttribute="top" secondItem="dku-eH-rh7" secondAttribute="bottom" constant="20" id="b2h-y5-hEK"/>
+                            <constraint firstItem="pg7-yg-gXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="fGP-Eh-FIB"/>
+                            <constraint firstItem="CVh-CT-ISn" firstAttribute="top" secondItem="pg7-yg-gXd" secondAttribute="bottom" constant="40" id="jXx-Lt-jwI"/>
+                            <constraint firstItem="dku-eH-rh7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="mAx-z4-URd"/>
+                            <constraint firstItem="dku-eH-rh7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="q6p-BH-5Gz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UISlider" id="rEJ-BC-c4i"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="myLabel1" destination="pg7-yg-gXd" id="rXo-Eh-iaS"/>
+                        <outlet property="myLabel2" destination="pfz-uM-1cD" id="ZzV-6h-uW2"/>
+                        <outlet property="mySlider1" destination="dku-eH-rh7" id="ysm-IZ-Cse"/>
+                        <outlet property="mySlider2" destination="CVh-CT-ISn" id="b8a-Jc-EeA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K5K-ql-l4Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kBZ-b5-33j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u8Z-bu-Yrp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fkn-69-YQl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6J-Pu-EfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Audio1" width="16" height="22"/>
+        <image name="Audio2" width="22" height="22"/>
+    </resources>
+</document>

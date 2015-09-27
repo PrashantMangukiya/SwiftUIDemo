@@ -11,7 +11,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-3: [UISegmentedControl](#demo-3-uisegmentedcontrol)
 + Demo-4: [UITextField](#demo-4-uitextfield)
 + Demo-5: [UITextView](#demo-5-uitextview)
-+ Demo-6: UISlider
++ Demo-6: [UISlider](#demo-6-uislider)
 + Demo-7: UISwitch
 + Demo-8: UIActivityIndicatorView
 + Demo-9: UIProgressView
@@ -56,7 +56,10 @@ Sample project that demonstrate how to use text view that allows multi line edit
 ![ScreenShot](../master/Screenshots/demo5-2t.png)
 
 ## Demo-6: UISlider
-coming soon
+Sample project that demonstrate how to use UISlider within swift based application. It shows how to read slider value and use it for changing font size etc.
+
+![ScreenShot](../master/Screenshots/demo6-1t.png)
+![ScreenShot](../master/Screenshots/demo6-2t.png)
 
 ## Demo-7: UISwitch
 coming soon
