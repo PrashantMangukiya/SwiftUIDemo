@@ -14,7 +14,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-6: [UISlider](#demo-6-uislider)
 + Demo-7: [UISwitch](#demo-7-uiswitch)
 + Demo-8: [UIActivityIndicatorView](#demo-8-uiactivityindicatorview)
-+ Demo-9: UIProgressView
++ Demo-9: [UIProgressView](#demo-9-uiprogressview)
 + Demo-10: UIStepper
 + Demo-11: UIImageView
 + Demo-12: UIScrollView
@@ -73,9 +73,11 @@ Sample project demonstrate how to use UIActivityIndicatorView. i.e. How to Start
 ![ScreenShot](../master/Screenshots/demo8-1t.png)
 ![ScreenShot](../master/Screenshots/demo8-2t.png)
 
-
 ## Demo-9: UIProgressView
-coming soon
+Sample project demonstrate how to use UIProgressView. i.e. how to increment progress programmaticaly, reset it etc. Used NSTimer for auto increment progress at certain interval. This example also demonstrate how to use NSTimer practically.
+
+![ScreenShot](../master/Screenshots/demo9-1t.png)
+![ScreenShot](../master/Screenshots/demo9-2t.png)
 
 ## Demo-10: UIStepper
 coming soon
