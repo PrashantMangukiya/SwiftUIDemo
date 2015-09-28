@@ -15,7 +15,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-7: [UISwitch](#demo-7-uiswitch)
 + Demo-8: [UIActivityIndicatorView](#demo-8-uiactivityindicatorview)
 + Demo-9: [UIProgressView](#demo-9-uiprogressview)
-+ Demo-10: UIStepper
++ Demo-10: [UIStepper](#demo-10-uistepper)
 + Demo-11: UIImageView
 + Demo-12: UIScrollView
 + Demo-13: UIDatePicker
@@ -80,7 +80,10 @@ Sample project demonstrate how to use UIProgressView. i.e. how to increment prog
 ![ScreenShot](../master/Screenshots/demo9-2t.png)
 
 ## Demo-10: UIStepper
-coming soon
+Sample project demonstrate how to use UIStepper for increment counter and font size at run time. 
+
+![ScreenShot](../master/Screenshots/demo10-1t.png)
+![ScreenShot](../master/Screenshots/demo10-2t.png)
 
 ## Demo-11: UIImageView
 coming soon

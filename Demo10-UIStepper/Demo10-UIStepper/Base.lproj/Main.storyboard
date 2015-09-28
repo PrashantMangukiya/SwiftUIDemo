@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XNU-6a-f0J">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--UIStepper-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo10_UIStepper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="L9S-4a-iZo">
+                                <rect key="frame" x="113" y="204" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="2Vs-Hp-gr6"/>
+                                    <constraint firstAttribute="width" constant="94" id="dMT-Ri-dbR"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="stepper1Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="Q67-UR-HBE"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9P-U8-OKJ">
+                                <rect key="frame" x="110" y="84" width="100" height="100"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JMT-LB-iHN"/>
+                                    <constraint firstAttribute="width" constant="100" id="YcT-Eo-jyJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="18" minimumValue="18" maximumValue="100" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="sbb-X8-W74">
+                                <rect key="frame" x="113" y="431" width="94" height="29"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="J4s-Lq-2hn"/>
+                                    <constraint firstAttribute="height" constant="29" id="yuj-bz-93o"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="stepper2Action:" destination="BYZ-38-t0r" eventType="valueChanged" id="R3I-6x-XMf"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fmk-Ut-72g">
+                                <rect key="frame" x="20" y="323" width="280" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="44d-kW-apF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sbb-X8-W74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ckz-UD-fgC"/>
+                            <constraint firstItem="g9P-U8-OKJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="GyF-aq-u3e"/>
+                            <constraint firstItem="sbb-X8-W74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S2p-OF-HAA"/>
+                            <constraint firstItem="g9P-U8-OKJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W33-gJ-QFe"/>
+                            <constraint firstAttribute="trailing" secondItem="Fmk-Ut-72g" secondAttribute="trailing" constant="20" id="dlI-lh-KmW"/>
+                            <constraint firstItem="sbb-X8-W74" firstAttribute="top" secondItem="Fmk-Ut-72g" secondAttribute="bottom" constant="8" id="duI-uc-FQz"/>
+                            <constraint firstItem="L9S-4a-iZo" firstAttribute="top" secondItem="g9P-U8-OKJ" secondAttribute="bottom" constant="20" id="geD-jR-Nvk"/>
+                            <constraint firstItem="Fmk-Ut-72g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="q9e-tE-TOo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sbb-X8-W74" secondAttribute="bottom" constant="20" id="vKN-h6-zCr"/>
+                            <constraint firstItem="L9S-4a-iZo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wrq-Xb-zRe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIStepper" id="pjN-0L-8Ws"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="g9P-U8-OKJ" id="njh-z4-ocU"/>
+                        <outlet property="messageLabel" destination="Fmk-Ut-72g" id="4Fi-PN-Xpw"/>
+                        <outlet property="stepper1" destination="L9S-4a-iZo" id="vdu-sM-Qdo"/>
+                        <outlet property="stepper2" destination="sbb-X8-W74" id="Kkc-sn-X2M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="urQ-aS-dnd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XNU-6a-f0J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2LH-dq-Duv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="n9o-Jn-M1U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDF-U2-AZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="366"/>
+        </scene>
+    </scenes>
+</document>
