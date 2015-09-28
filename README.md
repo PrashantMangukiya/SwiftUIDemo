@@ -16,7 +16,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-8: [UIActivityIndicatorView](#demo-8-uiactivityindicatorview)
 + Demo-9: [UIProgressView](#demo-9-uiprogressview)
 + Demo-10: [UIStepper](#demo-10-uistepper)
-+ Demo-11: UIImageView
++ Demo-11: [UIImageView](#demo-11-uiimageview)
 + Demo-12: UIScrollView
 + Demo-13: UIDatePicker
 + Demo-14: UIPickerView
@@ -86,7 +86,13 @@ Sample project demonstrate how to use UIStepper for increment counter and font s
 ![ScreenShot](../master/Screenshots/demo10-2t.png)
 
 ## Demo-11: UIImageView
-coming soon
+Sample project that demonstrate how to use UIImageView and set ContentMode runtime. (e.g. ``ScaleToFill``, ``ScaleAspectFit``, ``ScaleAspectFill``, ``Redraw``, ``Center``, ``Top``, ``Bottom``, ``Left``, ``Right``, ``TopLeft``, ``TopRight``, ``BottomLeft``, ``BottomRight``).
+
+![ScreenShot](../master/Screenshots/demo11-1t.png)
+![ScreenShot](../master/Screenshots/demo11-2t.png)
+
+![ScreenShot](../master/Screenshots/demo11-3t.png)
+![ScreenShot](../master/Screenshots/demo11-4t.png)
 
 ## Demo-12: UIScrollView
 coming soon
