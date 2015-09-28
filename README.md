@@ -13,7 +13,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-5: [UITextView](#demo-5-uitextview)
 + Demo-6: [UISlider](#demo-6-uislider)
 + Demo-7: [UISwitch](#demo-7-uiswitch)
-+ Demo-8: UIActivityIndicatorView
++ Demo-8: [UIActivityIndicatorView](#demo-8-uiactivityindicatorview)
 + Demo-9: UIProgressView
 + Demo-10: UIStepper
 + Demo-11: UIImageView
@@ -68,7 +68,11 @@ Sample project demonstrate how to use UISwitch, set various properties or value 
 ![ScreenShot](../master/Screenshots/demo7-2t.png)
 
 ## Demo-8: UIActivityIndicatorView
-coming soon
+Sample project demonstrate how to use UIActivityIndicatorView. i.e. How to Start/Stop spinning programmatically and hide it.
+
+![ScreenShot](../master/Screenshots/demo8-1t.png)
+![ScreenShot](../master/Screenshots/demo8-2t.png)
+
 
 ## Demo-9: UIProgressView
 coming soon
