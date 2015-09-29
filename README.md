@@ -17,7 +17,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-9: [UIProgressView](#demo-9-uiprogressview)
 + Demo-10: [UIStepper](#demo-10-uistepper)
 + Demo-11: [UIImageView](#demo-11-uiimageview)
-+ Demo-12: UIScrollView
++ Demo-12: [UIScrollView](#demo-12-uiscrollview)
 + Demo-13: UIDatePicker
 + Demo-14: UIPickerView
 + Demo-15: UIView
@@ -89,13 +89,16 @@ Sample project demonstrate how to use UIStepper for increment counter and font s
 Sample project that demonstrate how to use UIImageView and set ContentMode runtime. (e.g. ``ScaleToFill``, ``ScaleAspectFit``, ``ScaleAspectFill``, ``Redraw``, ``Center``, ``Top``, ``Bottom``, ``Left``, ``Right``, ``TopLeft``, ``TopRight``, ``BottomLeft``, ``BottomRight``).
 
 ![ScreenShot](../master/Screenshots/demo11-1t.png)
-![ScreenShot](../master/Screenshots/demo11-2t.png)
+![ScreenShot](../master/Screenshots/demo11-2t.png) 
 
 ![ScreenShot](../master/Screenshots/demo11-3t.png)
 ![ScreenShot](../master/Screenshots/demo11-4t.png)
 
 ## Demo-12: UIScrollView
-coming soon
+Sample project demonstrate how to use UIScrollView. i.e. How to set scroll view content size, content offset, zoom scale etc. It shows how to add UIImageView runtime and set Default, Minimum, and Maximum Zoom scale. It's using UIScrollViewDelegate method for detecting zoom.
+
+![ScreenShot](../master/Screenshots/demo12-1t.png)
+![ScreenShot](../master/Screenshots/demo12-2t.png)
 
 ## Demo-13: UIDatePicker
 coming soon
@@ -112,6 +115,10 @@ coming soon
 ## Demo-17: UIVisualEffectView
 coming soon
 
+## Image Source
+Images shown within sample are taken from unsplash and used for demo purpose only. I does not claim ownership over any images or icon used.
+
 ## License
 SwiftUIDemo is available under the MIT license. See the LICENSE file for more info.
+
 
