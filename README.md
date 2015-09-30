@@ -20,7 +20,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-12: [UIScrollView](#demo-12-uiscrollview)
 + Demo-13: [UIDatePicker](#demo-13-uidatepicker)
 + Demo-14: [UIPickerView](#demo-14-uipickerview)
-+ Demo-15: UIView
++ Demo-15: [UIView](#demo-15-uiview)
 + Demo-16: Container View
 + Demo-17: UIVisualEffectView
 
@@ -113,7 +113,10 @@ Sample project demonstrate how to use UIPickerView having custom component. It s
 ![ScreenShot](../master/Screenshots/demo14-2t.png)
 
 ## Demo-15: UIView
-coming soon
+Sample project demonstrate how to use UIView and change its property (corner radious, border thickness) runtime using UISlider etc.
+
+![ScreenShot](../master/Screenshots/demo15-1t.png)
+![ScreenShot](../master/Screenshots/demo15-2t.png)
 
 ## Demo-16: Container View
 coming soon
