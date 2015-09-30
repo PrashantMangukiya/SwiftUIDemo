@@ -18,7 +18,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-10: [UIStepper](#demo-10-uistepper)
 + Demo-11: [UIImageView](#demo-11-uiimageview)
 + Demo-12: [UIScrollView](#demo-12-uiscrollview)
-+ Demo-13: UIDatePicker
++ Demo-13: [UIDatePicker](#demo-13-uidatepicker)
 + Demo-14: UIPickerView
 + Demo-15: UIView
 + Demo-16: Container View
@@ -101,7 +101,11 @@ Sample project demonstrate how to use UIScrollView. i.e. How to set scroll view 
 ![ScreenShot](../master/Screenshots/demo12-2t.png)
 
 ## Demo-13: UIDatePicker
-coming soon
+Sample project demonstrate how to use UIDatePicker i.e. read date value and assign to label when user change it runtime.
+
+![ScreenShot](../master/Screenshots/demo13-1t.png)
+![ScreenShot](../master/Screenshots/demo13-2t.png)
+
 
 ## Demo-14: UIPickerView
 coming soon
