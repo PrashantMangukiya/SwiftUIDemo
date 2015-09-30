@@ -19,7 +19,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-11: [UIImageView](#demo-11-uiimageview)
 + Demo-12: [UIScrollView](#demo-12-uiscrollview)
 + Demo-13: [UIDatePicker](#demo-13-uidatepicker)
-+ Demo-14: UIPickerView
++ Demo-14: [UIPickerView](#demo-14-uipickerview)
 + Demo-15: UIView
 + Demo-16: Container View
 + Demo-17: UIVisualEffectView
@@ -106,9 +106,11 @@ Sample project demonstrate how to use UIDatePicker i.e. read date value and assi
 ![ScreenShot](../master/Screenshots/demo13-1t.png)
 ![ScreenShot](../master/Screenshots/demo13-2t.png)
 
-
 ## Demo-14: UIPickerView
-coming soon
+Sample project demonstrate how to use UIPickerView having custom component. It shows how to fillup data within each component using UIPickerViewDataSource and read selected component value at runtime.
+
+![ScreenShot](../master/Screenshots/demo14-1t.png)
+![ScreenShot](../master/Screenshots/demo14-2t.png)
 
 ## Demo-15: UIView
 coming soon
