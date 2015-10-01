@@ -21,7 +21,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-13: [UIDatePicker](#demo-13-uidatepicker)
 + Demo-14: [UIPickerView](#demo-14-uipickerview)
 + Demo-15: [UIView](#demo-15-uiview)
-+ Demo-16: Container View
++ Demo-16: [UIContainerView](#demo-16-uicontainerview)
 + Demo-17: UIVisualEffectView
 
 
@@ -118,8 +118,15 @@ Sample project demonstrate how to use UIView and change its property (corner rad
 ![ScreenShot](../master/Screenshots/demo15-1t.png)
 ![ScreenShot](../master/Screenshots/demo15-2t.png)
 
-## Demo-16: Container View
-coming soon
+## Demo-16: UIContainerView
+Sample project demonstrate how to use UIContainerView to load UIViewController within specific area of the screen. This demo also shows how to show/hide external view via UISegmentedControl and how external view behaves when navigate via bar button.
+
+![ScreenShot](../master/Screenshots/demo16-1t.png)
+![ScreenShot](../master/Screenshots/demo16-2t.png)
+
+![ScreenShot](../master/Screenshots/demo16-3t.png)
+![ScreenShot](../master/Screenshots/demo16-4t.png)
+
 
 ## Demo-17: UIVisualEffectView
 coming soon
