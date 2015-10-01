@@ -23,6 +23,12 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-15: [UIView](#demo-15-uiview)
 + Demo-16: [UIContainerView](#demo-16-uicontainerview)
 + Demo-17: UIVisualEffectView
++ Demo-18: UIAlertController
++ Demo-19: UIWebView
++ Demo-20: UINavigationBar
++ Demo-21: UITabBar
++ Demo-22: UITableView
++ Demo-23: UICollectionView
 
 
 ## Demo-1: UILabel
@@ -127,8 +133,25 @@ Sample project demonstrate how to use UIContainerView to load UIViewController w
 ![ScreenShot](../master/Screenshots/demo16-3t.png)
 ![ScreenShot](../master/Screenshots/demo16-4t.png)
 
-
 ## Demo-17: UIVisualEffectView
+coming soon
+
+## Demo-18: UIAlertController
+coming soon
+
+## Demo-19: UIWebView
+coming soon
+
+## Demo-20: UINavigationBar
+coming soon
+
+## Demo-21: UITabBar
+coming soon
+
+## Demo-22: UITableView
+coming soon
+
+## Demo-23: UICollectionView
 coming soon
 
 ## Image Source
