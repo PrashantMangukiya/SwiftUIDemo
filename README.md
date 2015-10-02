@@ -22,7 +22,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-14: [UIPickerView](#demo-14-uipickerview)
 + Demo-15: [UIView](#demo-15-uiview)
 + Demo-16: [UIContainerView](#demo-16-uicontainerview)
-+ Demo-17: UIVisualEffectView
++ Demo-17: [UIVisualEffectView](#demo-17-uivisualeffectview)
 + Demo-18: UIAlertController
 + Demo-19: UIWebView
 + Demo-20: UINavigationBar
@@ -134,7 +134,10 @@ Sample project demonstrate how to use UIContainerView to load UIViewController w
 ![ScreenShot](../master/Screenshots/demo16-4t.png)
 
 ## Demo-17: UIVisualEffectView
-coming soon
+Sample project demonstrate how to apply Blur and Vibrancy using UIVisualEffectView. It provides three options i.e. Extra Light, Light and Dark.
+
+![ScreenShot](../master/Screenshots/demo17-1t.png)
+![ScreenShot](../master/Screenshots/demo17-2t.png)
 
 ## Demo-18: UIAlertController
 coming soon
