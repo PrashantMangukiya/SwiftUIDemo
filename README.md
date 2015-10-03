@@ -23,7 +23,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-15: [UIView](#demo-15-uiview)
 + Demo-16: [UIContainerView](#demo-16-uicontainerview)
 + Demo-17: [UIVisualEffectView](#demo-17-uivisualeffectview)
-+ Demo-18: UIAlertController
++ Demo-18: [UIAlertController](#demo-18-uialertcontroller)
 + Demo-19: UIWebView
 + Demo-20: UINavigationBar
 + Demo-21: UITabBar
@@ -140,7 +140,11 @@ Sample project demonstrate how to apply Blur and Vibrancy using UIVisualEffectVi
 ![ScreenShot](../master/Screenshots/demo17-2t.png)
 
 ## Demo-18: UIAlertController
-coming soon
+Sample project demonstrate how to show Alert and ActionSheet using UIAlertController having different action button i.e Ok, Cancel, Yes, No, Delete etc.
+
+![ScreenShot](../master/Screenshots/demo18-1t.png)
+![ScreenShot](../master/Screenshots/demo18-2t.png)
+
 
 ## Demo-19: UIWebView
 coming soon
