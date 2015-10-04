@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NW9-kQ-Rbe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--UIWebView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo19_UIWebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TJ-tC-2yw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-3m-OLe">
+                                <rect key="frame" x="142" y="221" width="37" height="37"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jby-3m-OLe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DcT-VH-T3b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2TJ-tC-2yw" secondAttribute="bottom" id="Hjt-6c-cM6"/>
+                            <constraint firstItem="2TJ-tC-2yw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="N1O-rD-H7S"/>
+                            <constraint firstItem="2TJ-tC-2yw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="evF-mV-1pP"/>
+                            <constraint firstAttribute="trailing" secondItem="2TJ-tC-2yw" secondAttribute="trailing" id="vNK-Xx-Upa"/>
+                            <constraint firstItem="Jby-3m-OLe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xnG-4R-tIJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UIWebView" id="OdE-ol-7xh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="WVi-F1-46H">
+                            <connections>
+                                <action selector="refreshButtonAction:" destination="BYZ-38-t0r" id="qE7-9C-zCF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="mySpinner" destination="Jby-3m-OLe" id="xmZ-3Z-VxQ"/>
+                        <outlet property="myWebView" destination="2TJ-tC-2yw" id="IhF-7d-gco"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nKI-FG-azR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NW9-kQ-Rbe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tvr-Of-Bm6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gKd-Xm-S3W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5NJ-Gu-4Xl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816" y="366"/>
+        </scene>
+    </scenes>
+</document>
