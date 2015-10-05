@@ -25,7 +25,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-17: [UIVisualEffectView](#demo-17-uivisualeffectview)
 + Demo-18: [UIAlertController](#demo-18-uialertcontroller)
 + Demo-19: [UIWebView](#demo-19-uiwebview)
-+ Demo-20: UINavigationBar
++ Demo-20: [UINavigationBar](#demo-20-uinavigationbar)
 + Demo-21: UITabBar
 + Demo-22: UITableView
 + Demo-23: UICollectionView
@@ -154,7 +154,11 @@ Sample projet demonstrate how to load web url within UIWebView component.
 
 
 ## Demo-20: UINavigationBar
-coming soon
+Sample project demonstrate how to navigate screen using 'segue', It also shows how to set the title for the destination screen by overriding the prepareForSegue function.
+
+![ScreenShot](../master/Screenshots/demo20-1t.png)
+![ScreenShot](../master/Screenshots/demo20-2t.png)
+
 
 ## Demo-21: UITabBar
 coming soon
