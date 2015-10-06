@@ -26,7 +26,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-18: [UIAlertController](#demo-18-uialertcontroller)
 + Demo-19: [UIWebView](#demo-19-uiwebview)
 + Demo-20: [UINavigationBar](#demo-20-uinavigationbar)
-+ Demo-21: UITabBar
++ Demo-21: [UITabBar](#demo-21-uitabbar)
 + Demo-22: UITableView
 + Demo-23: UICollectionView
 
@@ -161,7 +161,14 @@ Sample project demonstrate how to navigate screen using 'segue', It also shows h
 
 
 ## Demo-21: UITabBar
-coming soon
+Sample project demonstrate how to implement tab based application flow using UITabBar. Contact screen consist top bar button (Map) that link with "Location Map" screen via segue and navigation controller.
+
+![ScreenShot](../master/Screenshots/demo21-1t.png)
+![ScreenShot](../master/Screenshots/demo21-2t.png)
+
+![ScreenShot](../master/Screenshots/demo21-3t.png)
+![ScreenShot](../master/Screenshots/demo21-4t.png)
+
 
 ## Demo-22: UITableView
 coming soon
