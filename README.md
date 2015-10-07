@@ -27,7 +27,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-19: [UIWebView](#demo-19-uiwebview)
 + Demo-20: [UINavigationBar](#demo-20-uinavigationbar)
 + Demo-21: [UITabBar](#demo-21-uitabbar)
-+ Demo-22: UITableView
++ Demo-22: [UITableView](#demo-22-uitableview)
 + Demo-23: UICollectionView
 
 
@@ -171,7 +171,10 @@ Sample project demonstrate how to implement tab based application flow using UIT
 
 
 ## Demo-22: UITableView
-coming soon
+Sample project that demonstrate how to use UITableView. i.e. how to display multiple section and fillup data for each. When clicked on particular row, it will pass the selected item name to details view controller and item name displayed accordingly on details screen.
+
+![ScreenShot](../master/Screenshots/demo22-1t.png)
+![ScreenShot](../master/Screenshots/demo22-2t.png)
 
 ## Demo-23: UICollectionView
 coming soon
