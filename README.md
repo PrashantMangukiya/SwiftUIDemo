@@ -28,7 +28,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-20: [UINavigationBar](#demo-20-uinavigationbar)
 + Demo-21: [UITabBar](#demo-21-uitabbar)
 + Demo-22: [UITableView](#demo-22-uitableview)
-+ Demo-23: UICollectionView
++ Demo-23: [UICollectionView](#demo-23-uicollectionview)
 
 
 ## Demo-1: UILabel
@@ -171,13 +171,20 @@ Sample project demonstrate how to implement tab based application flow using UIT
 
 
 ## Demo-22: UITableView
-Sample project that demonstrate how to use UITableView. i.e. how to display multiple section and fillup data for each. When clicked on particular row, it will pass the selected item name to details view controller and item name displayed accordingly on details screen.
+Sample project demonstrate how to use UITableView. i.e. how to display multiple section and fillup data for each. When clicked on particular row, it will pass the selected item name to details view controller and item name displayed accordingly on details screen.
 
 ![ScreenShot](../master/Screenshots/demo22-1t.png)
 ![ScreenShot](../master/Screenshots/demo22-2t.png)
 
 ## Demo-23: UICollectionView
-coming soon
+Sample project demonstrate how to use UICollectionView. i.e. Creating custom cell that consist image, change image corner radioous at runtime as when stepper value changed.
+
+![ScreenShot](../master/Screenshots/demo23-1t.png)
+![ScreenShot](../master/Screenshots/demo23-2t.png)
+
+![ScreenShot](../master/Screenshots/demo23-3t.png)
+![ScreenShot](../master/Screenshots/demo23-4t.png)
+
 
 ## Image Source
 Images shown within sample are taken from unsplash and used for demo purpose only. I does not claim ownership over any images or icon used.
