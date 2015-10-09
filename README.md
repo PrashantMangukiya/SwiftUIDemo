@@ -29,6 +29,17 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-21: [UITabBar](#demo-21-uitabbar)
 + Demo-22: [UITableView](#demo-22-uitableview)
 + Demo-23: [UICollectionView](#demo-23-uicollectionview)
++ Demo-24: UIToolbar
++ Demo-25: UISearchBar
++ Demo-26: UIStackView - Horizontal
++ Demo-27: UIStackView - Vertical
++ Demo-28: UITapGestureRecognizer
++ Demo-29: UIPinchGestureRecognizer
++ Demo-30: UIRotationGestureRecognizer
++ Demo-31: UISwipeGestureRecognizer
++ Demo-32: UIPanGestureRecognizer
++ Demo-33: UIScreenEdgePanGestureRecognizer
++ Demo-34: UILongPressGestureRecognizer
 
 
 ## Demo-1: UILabel
@@ -185,11 +196,43 @@ Sample project demonstrate how to use UICollectionView. i.e. Creating custom cel
 ![ScreenShot](../master/Screenshots/demo23-3t.png)
 ![ScreenShot](../master/Screenshots/demo23-4t.png)
 
+## Demo-24: UIToolbar
+Coming soon
+
+## Demo-25: UISearchBar
+Coming soon
+
+## Demo-26: UIStackView - Horizontal
+Coming soon
+
+## Demo-27: UIStackView - Vertical
+Coming soon
+
+## Demo-28: UITapGestureRecognizer
+Coming soon
+
+## Demo-29: UIPinchGestureRecognizer
+Coming soon
+
+## Demo-30: UIRotationGestureRecognizer
+Coming soon
+
+## Demo-31: UISwipeGestureRecognizer
+Coming soon
+
+## Demo-32: UIPanGestureRecognizer
+Coming soon
+
+## Demo-33: UIScreenEdgePanGestureRecognizer
+Coming soon
+
+## Demo-34: UILongPressGestureRecognizer
+Coming soon
+
 
 ## Image Source
 Images shown within sample are taken from unsplash and used for demo purpose only. I does not claim ownership over any images or icon used.
 
 ## License
 SwiftUIDemo is available under the MIT license. See the LICENSE file for more info.
-
 
