@@ -29,7 +29,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-21: [UITabBar](#demo-21-uitabbar)
 + Demo-22: [UITableView](#demo-22-uitableview)
 + Demo-23: [UICollectionView](#demo-23-uicollectionview)
-+ Demo-24: UIToolbar
++ Demo-24: [UIToolbar](#demo-24-uitoolbar)
 + Demo-25: UISearchBar
 + Demo-26: UIStackView - Horizontal
 + Demo-27: UIStackView - Vertical
@@ -197,7 +197,13 @@ Sample project demonstrate how to use UICollectionView. i.e. Creating custom cel
 ![ScreenShot](../master/Screenshots/demo23-4t.png)
 
 ## Demo-24: UIToolbar
-Coming soon
+Sample project demonstrate how to use UIToolbar. UIToolbar can be used for various action button. This project also demonstrate how to show hide toobar using UIView Animation technique.
+
+![ScreenShot](../master/Screenshots/demo24-1t.png)
+![ScreenShot](../master/Screenshots/demo24-2t.png)
+
+![ScreenShot](../master/Screenshots/demo24-3t.png)
+![ScreenShot](../master/Screenshots/demo24-4t.png)
 
 ## Demo-25: UISearchBar
 Coming soon
