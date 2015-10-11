@@ -33,7 +33,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-25: UISearchBar
 + Demo-26: UIStackView - Horizontal
 + Demo-27: UIStackView - Vertical
-+ Demo-28: UITapGestureRecognizer
++ Demo-28: [UITapGestureRecognizer](#demo-28-uitapgesturerecognizer)
 + Demo-29: UIPinchGestureRecognizer
 + Demo-30: UIRotationGestureRecognizer
 + Demo-31: UISwipeGestureRecognizer
@@ -215,7 +215,10 @@ Coming soon
 Coming soon
 
 ## Demo-28: UITapGestureRecognizer
-Coming soon
+Sample project demonstrate how to use UIGestureRecognizer. i.e. how increase counter while tapped on the screen.
+
+![ScreenShot](../master/Screenshots/demo28-1t.png)
+![ScreenShot](../master/Screenshots/demo28-2t.png)
 
 ## Demo-29: UIPinchGestureRecognizer
 Coming soon
