@@ -34,7 +34,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-26: UIStackView - Horizontal
 + Demo-27: UIStackView - Vertical
 + Demo-28: [UITapGestureRecognizer](#demo-28-uitapgesturerecognizer)
-+ Demo-29: UIPinchGestureRecognizer
++ Demo-29: [UIPinchGestureRecognizer](#demo-29-uipinchgesturerecognizer)
 + Demo-30: UIRotationGestureRecognizer
 + Demo-31: UISwipeGestureRecognizer
 + Demo-32: UIPanGestureRecognizer
@@ -221,7 +221,10 @@ Sample project demonstrate how to use UIGestureRecognizer. i.e. how increase cou
 ![ScreenShot](../master/Screenshots/demo28-2t.png)
 
 ## Demo-29: UIPinchGestureRecognizer
-Coming soon
+Sample project demonstrate UIPinchGestureRecognizer usage. i.e. How to change view scale on pinch.
+
+![ScreenShot](../master/Screenshots/demo29-1t.png)
+![ScreenShot](../master/Screenshots/demo29-2t.png)
 
 ## Demo-30: UIRotationGestureRecognizer
 Coming soon

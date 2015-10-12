@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bbj-Cq-G8j">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Pinch Gesture-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo29_UIPinchGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pinch to resize the square." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TFy-Pc-DdQ">
+                                <rect key="frame" x="20" y="439" width="280" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8hE-cw-0sn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="riI-KW-4ZA">
+                                <rect key="frame" x="110" y="190" width="100" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XrZ-SG-qW3"/>
+                                    <constraint firstAttribute="width" constant="100" id="eW9-RZ-0u6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TFy-Pc-DdQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1Zy-b0-UYu"/>
+                            <constraint firstItem="riI-KW-4ZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4fd-If-FDS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TFy-Pc-DdQ" secondAttribute="bottom" constant="20" id="7Ja-9Y-NJI"/>
+                            <constraint firstItem="riI-KW-4ZA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UCq-7l-Idj"/>
+                            <constraint firstAttribute="trailing" secondItem="TFy-Pc-DdQ" secondAttribute="trailing" constant="20" id="mfb-LZ-3DM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pinch Gesture" id="ucn-E7-fhg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="squareView" destination="riI-KW-4ZA" id="PU2-Nz-l39"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="367"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qTd-i3-fNr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bbj-Cq-G8j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i0Z-if-JoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HK5-e9-SGA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5TW-Wd-Tuw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="367"/>
+        </scene>
+    </scenes>
+</document>
