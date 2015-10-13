@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o7H-AZ-iFh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Rotation Gesture-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo30_UIRotationGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eR-ak-9hH">
+                                <rect key="frame" x="60" y="165" width="200" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhu-l5-444">
+                                        <rect key="frame" x="140" y="55" width="40" height="40"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="EtU-LW-fhh"/>
+                                            <constraint firstAttribute="height" constant="40" id="Zrp-Ut-dFU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tez-Mp-THm">
+                                        <rect key="frame" x="20" y="55" width="40" height="40"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="DnB-QM-oTe"/>
+                                            <constraint firstAttribute="width" constant="40" id="oHE-9P-wkg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Qhu-l5-444" secondAttribute="trailing" constant="20" id="1R3-oR-ocD"/>
+                                    <constraint firstItem="tez-Mp-THm" firstAttribute="centerY" secondItem="1eR-ak-9hH" secondAttribute="centerY" id="2ke-BL-47Q"/>
+                                    <constraint firstItem="Qhu-l5-444" firstAttribute="centerY" secondItem="1eR-ak-9hH" secondAttribute="centerY" id="4Lp-4k-gse"/>
+                                    <constraint firstAttribute="width" constant="200" id="Rx3-U4-eoU"/>
+                                    <constraint firstItem="tez-Mp-THm" firstAttribute="leading" secondItem="1eR-ak-9hH" secondAttribute="leading" constant="20" id="cD8-4V-JD6"/>
+                                    <constraint firstAttribute="height" constant="150" id="xzB-ZK-iqa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rotate the object using two finger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6iK-H7-KJN">
+                                <rect key="frame" x="20" y="436" width="280" height="24"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1eR-ak-9hH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GHF-BH-iqo"/>
+                            <constraint firstItem="1eR-ak-9hH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pgo-lR-UYn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6iK-H7-KJN" secondAttribute="bottom" constant="20" id="Rdb-dJ-xf2"/>
+                            <constraint firstAttribute="trailing" secondItem="6iK-H7-KJN" secondAttribute="trailing" constant="20" id="b9a-kM-u9c"/>
+                            <constraint firstItem="6iK-H7-KJN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mp3-sQ-7mf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rotation Gesture" id="BgM-Ut-3m7"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="sampleView" destination="1eR-ak-9hH" id="bqa-5k-MIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="367"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GKL-VE-WV6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o7H-AZ-iFh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ahI-1m-4T1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p5o-QD-9Tg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxF-3o-UGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="367"/>
+        </scene>
+    </scenes>
+</document>
