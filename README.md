@@ -36,7 +36,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-28: [UITapGestureRecognizer](#demo-28-uitapgesturerecognizer)
 + Demo-29: [UIPinchGestureRecognizer](#demo-29-uipinchgesturerecognizer)
 + Demo-30: [UIRotationGestureRecognizer](#demo-30-uirotationgesturerecognizer)
-+ Demo-31: UISwipeGestureRecognizer
++ Demo-31: [UISwipeGestureRecognizer](#demo-31-uiswipegesturerecognizer)
 + Demo-32: UIPanGestureRecognizer
 + Demo-33: UIScreenEdgePanGestureRecognizer
 + Demo-34: UILongPressGestureRecognizer
@@ -232,9 +232,14 @@ Sample project demonstrate how to rotate object using UIRotationGestureRecognize
 ![ScreenShot](../master/Screenshots/demo30-1t.png)
 ![ScreenShot](../master/Screenshots/demo30-2t.png)
 
-
 ## Demo-31: UISwipeGestureRecognizer
-Coming soon
+Sample project demonstrate how to move object using UISwipeGestureRecognizer i.e. Swipe Left, Right, Up, Down.
+
+![ScreenShot](../master/Screenshots/demo31-1t.png)
+![ScreenShot](../master/Screenshots/demo31-2t.png)
+
+![ScreenShot](../master/Screenshots/demo31-3t.png)
+![ScreenShot](../master/Screenshots/demo31-4t.png)
 
 ## Demo-32: UIPanGestureRecognizer
 Coming soon
