@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F253F6B1BCF5FAF00E28891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F253F6A1BCF5FAF00E28891 /* AppDelegate.swift */; };
+		8F253F6D1BCF5FAF00E28891 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F253F6C1BCF5FAF00E28891 /* ViewController.swift */; };
+		8F253F701BCF5FAF00E28891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F253F6E1BCF5FAF00E28891 /* Main.storyboard */; };
+		8F253F721BCF5FAF00E28891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F253F711BCF5FAF00E28891 /* Assets.xcassets */; };
+		8F253F751BCF5FAF00E28891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F253F731BCF5FAF00E28891 /* LaunchScreen.storyboard */; };
+		8F253F7F1BCF835400E28891 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F253F7E1BCF835400E28891 /* MyCustomView.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F253F671BCF5FAF00E28891 /* Demo32-UIPanGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo32-UIPanGesture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F253F6A1BCF5FAF00E28891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F253F6C1BCF5FAF00E28891 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F253F6F1BCF5FAF00E28891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F253F711BCF5FAF00E28891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F253F741BCF5FAF00E28891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F253F761BCF5FAF00E28891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F253F7E1BCF835400E28891 /* MyCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F253F641BCF5FAF00E28891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F253F5E1BCF5FAF00E28891 = {
+			isa = PBXGroup;
+			children = (
+				8F253F691BCF5FAF00E28891 /* Demo32-UIPanGesture */,
+				8F253F681BCF5FAF00E28891 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F253F681BCF5FAF00E28891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F253F671BCF5FAF00E28891 /* Demo32-UIPanGesture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F253F691BCF5FAF00E28891 /* Demo32-UIPanGesture */ = {
+			isa = PBXGroup;
+			children = (
+				8F253F6A1BCF5FAF00E28891 /* AppDelegate.swift */,
+				8F253F7E1BCF835400E28891 /* MyCustomView.swift */,
+				8F253F6C1BCF5FAF00E28891 /* ViewController.swift */,
+				8F253F6E1BCF5FAF00E28891 /* Main.storyboard */,
+				8F253F711BCF5FAF00E28891 /* Assets.xcassets */,
+				8F253F731BCF5FAF00E28891 /* LaunchScreen.storyboard */,
+				8F253F761BCF5FAF00E28891 /* Info.plist */,
+			);
+			path = "Demo32-UIPanGesture";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F253F661BCF5FAF00E28891 /* Demo32-UIPanGesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F253F791BCF5FAF00E28891 /* Build configuration list for PBXNativeTarget "Demo32-UIPanGesture" */;
+			buildPhases = (
+				8F253F631BCF5FAF00E28891 /* Sources */,
+				8F253F641BCF5FAF00E28891 /* Frameworks */,
+				8F253F651BCF5FAF00E28891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo32-UIPanGesture";
+			productName = "Demo32-UIPanGesture";
+			productReference = 8F253F671BCF5FAF00E28891 /* Demo32-UIPanGesture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F253F5F1BCF5FAF00E28891 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "PrashantKumar Mangukiya";
+				TargetAttributes = {
+					8F253F661BCF5FAF00E28891 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F253F621BCF5FAF00E28891 /* Build configuration list for PBXProject "Demo32-UIPanGesture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F253F5E1BCF5FAF00E28891;
+			productRefGroup = 8F253F681BCF5FAF00E28891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F253F661BCF5FAF00E28891 /* Demo32-UIPanGesture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F253F651BCF5FAF00E28891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F253F751BCF5FAF00E28891 /* LaunchScreen.storyboard in Resources */,
+				8F253F721BCF5FAF00E28891 /* Assets.xcassets in Resources */,
+				8F253F701BCF5FAF00E28891 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F253F631BCF5FAF00E28891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F253F7F1BCF835400E28891 /* MyCustomView.swift in Sources */,
+				8F253F6D1BCF5FAF00E28891 /* ViewController.swift in Sources */,
+				8F253F6B1BCF5FAF00E28891 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F253F6E1BCF5FAF00E28891 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F253F6F1BCF5FAF00E28891 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F253F731BCF5FAF00E28891 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F253F741BCF5FAF00E28891 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F253F771BCF5FAF00E28891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F253F781BCF5FAF00E28891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F253F7A1BCF5FAF00E28891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Demo32-UIPanGesture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantmangukiya.ios.Demo32-UIPanGesture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F253F7B1BCF5FAF00E28891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Demo32-UIPanGesture/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantmangukiya.ios.Demo32-UIPanGesture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F253F621BCF5FAF00E28891 /* Build configuration list for PBXProject "Demo32-UIPanGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F253F771BCF5FAF00E28891 /* Debug */,
+				8F253F781BCF5FAF00E28891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F253F791BCF5FAF00E28891 /* Build configuration list for PBXNativeTarget "Demo32-UIPanGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F253F7A1BCF5FAF00E28891 /* Debug */,
+				8F253F7B1BCF5FAF00E28891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F253F5F1BCF5FAF00E28891 /* Project object */;
+}
