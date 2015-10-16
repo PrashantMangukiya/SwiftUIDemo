@@ -38,7 +38,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-30: [UIRotationGestureRecognizer](#demo-30-uirotationgesturerecognizer)
 + Demo-31: [UISwipeGestureRecognizer](#demo-31-uiswipegesturerecognizer)
 + Demo-32: [UIPanGestureRecognizer](#demo-32-uipangesturerecognizer)
-+ Demo-33: UIScreenEdgePanGestureRecognizer
++ Demo-33: [UIScreenEdgePanGestureRecognizer](#demo-33-uiscreenedgepangesturerecognizer)
 + Demo-34: UILongPressGestureRecognizer
 
 
@@ -248,7 +248,10 @@ Sample project demonstrate how to implement object drag using UIPanGestureRecogn
 ![ScreenShot](../master/Screenshots/demo32-2t.png)
 
 ## Demo-33: UIScreenEdgePanGestureRecognizer
-Coming soon
+Sample project demonstrate how to detect screen edge swipe (Left, Right etc.) using UIScreenEdgePanGestureRecognizer.
+
+![ScreenShot](../master/Screenshots/demo33-1t.png)
+![ScreenShot](../master/Screenshots/demo33-2t.png)
 
 ## Demo-34: UILongPressGestureRecognizer
 Coming soon
