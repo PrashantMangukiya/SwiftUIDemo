@@ -39,7 +39,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-31: [UISwipeGestureRecognizer](#demo-31-uiswipegesturerecognizer)
 + Demo-32: [UIPanGestureRecognizer](#demo-32-uipangesturerecognizer)
 + Demo-33: [UIScreenEdgePanGestureRecognizer](#demo-33-uiscreenedgepangesturerecognizer)
-+ Demo-34: UILongPressGestureRecognizer
++ Demo-34: [UILongPressGestureRecognizer](#demo-34-uilongpressgesturerecognizer)
 
 
 ## Demo-1: UILabel
@@ -254,8 +254,10 @@ Sample project demonstrate how to detect screen edge swipe (Left, Right etc.) us
 ![ScreenShot](../master/Screenshots/demo33-2t.png)
 
 ## Demo-34: UILongPressGestureRecognizer
-Coming soon
+Sample project demonstrate how to detect long press gesture using UILongPressGestureRecognizer. It will put circle at the location where long press detected on the screen.
 
+![ScreenShot](../master/Screenshots/demo34-1t.png)
+![ScreenShot](../master/Screenshots/demo34-2t.png)
 
 ## Image Source
 Images shown within sample are taken from unsplash and used for demo purpose only. I does not claim ownership over any images or icon used.
