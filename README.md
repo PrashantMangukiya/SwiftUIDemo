@@ -32,7 +32,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-24: [UIToolbar](#demo-24-uitoolbar)
 + Demo-25: UISearchBar
 + Demo-26: UIStackView - Horizontal
-+ Demo-27: UIStackView - Vertical
++ Demo-27: [UIStackView - Vertical](#demo-27-uistackview---vertical)
 + Demo-28: [UITapGestureRecognizer](#demo-28-uitapgesturerecognizer)
 + Demo-29: [UIPinchGestureRecognizer](#demo-29-uipinchgesturerecognizer)
 + Demo-30: [UIRotationGestureRecognizer](#demo-30-uirotationgesturerecognizer)
@@ -212,7 +212,10 @@ Coming soon
 Coming soon
 
 ## Demo-27: UIStackView - Vertical
-Coming soon
+Sample project demonstrate UIStackView usage (in vertical mode) and how to add images runtime within it.
+
+![ScreenShot](../master/Screenshots/demo27-1t.png)
+![ScreenShot](../master/Screenshots/demo27-2t.png)
 
 ## Demo-28: UITapGestureRecognizer
 Sample project demonstrate how to use UIGestureRecognizer. i.e. how increase counter while tapped on the screen.
