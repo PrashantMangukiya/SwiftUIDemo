@@ -31,7 +31,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-23: [UICollectionView](#demo-23-uicollectionview)
 + Demo-24: [UIToolbar](#demo-24-uitoolbar)
 + Demo-25: UISearchBar
-+ Demo-26: UIStackView - Horizontal
++ Demo-26: [UIStackView - Horizontal](#demo-26-uistackview---horizontal)
 + Demo-27: [UIStackView - Vertical](#demo-27-uistackview---vertical)
 + Demo-28: [UITapGestureRecognizer](#demo-28-uitapgesturerecognizer)
 + Demo-29: [UIPinchGestureRecognizer](#demo-29-uipinchgesturerecognizer)
@@ -209,10 +209,13 @@ Sample project demonstrate how to use UIToolbar. UIToolbar can be used for vario
 Coming soon
 
 ## Demo-26: UIStackView - Horizontal
-Coming soon
+Sample project demonstrate UIStackView usage (horizontal mode) and how to add images runtime within it.
+
+![ScreenShot](../master/Screenshots/demo26-1t.png)
+![ScreenShot](../master/Screenshots/demo26-2t.png)
 
 ## Demo-27: UIStackView - Vertical
-Sample project demonstrate UIStackView usage (in vertical mode) and how to add images runtime within it.
+Sample project demonstrate UIStackView usage (vertical mode) and how to add images runtime within it.
 
 ![ScreenShot](../master/Screenshots/demo27-1t.png)
 ![ScreenShot](../master/Screenshots/demo27-2t.png)
