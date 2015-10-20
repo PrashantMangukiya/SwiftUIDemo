@@ -30,7 +30,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-22: [UITableView](#demo-22-uitableview)
 + Demo-23: [UICollectionView](#demo-23-uicollectionview)
 + Demo-24: [UIToolbar](#demo-24-uitoolbar)
-+ Demo-25: UISearchBar
++ Demo-25: [UISearchBar](#demo-25-uisearchbar)
 + Demo-26: [UIStackView - Horizontal](#demo-26-uistackview---horizontal)
 + Demo-27: [UIStackView - Vertical](#demo-27-uistackview---vertical)
 + Demo-28: [UITapGestureRecognizer](#demo-28-uitapgesturerecognizer)
@@ -206,7 +206,10 @@ Sample project demonstrate how to use UIToolbar. UIToolbar can be used for vario
 ![ScreenShot](../master/Screenshots/demo24-4t.png)
 
 ## Demo-25: UISearchBar
-Coming soon
+Sample project demonstrate how to use UISearchBar to perform keyword search within data set and fillup UITableView accordingly. It is using UISearchBarDelegate to perfom search operation while user type the keyword.
+
+![ScreenShot](../master/Screenshots/demo25-1t.png)
+![ScreenShot](../master/Screenshots/demo25-2t.png)
 
 ## Demo-26: UIStackView - Horizontal
 Sample project demonstrate UIStackView usage (horizontal mode) and how to add images runtime within it.
