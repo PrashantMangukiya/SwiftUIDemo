@@ -41,6 +41,8 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-33: [UIScreenEdgePanGestureRecognizer](#demo-33-uiscreenedgepangesturerecognizer)
 + Demo-34: [UILongPressGestureRecognizer](#demo-34-uilongpressgesturerecognizer)
 + Demo-35: UIPageControl
++ Demo-36: Indexed Table View
++ Demo-37: Grouped Table View
 
 
 ## Demo-1: UILabel
@@ -270,6 +272,12 @@ Sample project demonstrate how to detect long press gesture using UILongPressGes
 ![ScreenShot](../master/Screenshots/demo34-2t.png)
 
 ## Demo-35: UIPageControl
+Coming Soon.
+
+## Demo-36: Indexed Table View
+Coming Soon.
+
+## Demo-37: Grouped Table View
 Coming Soon.
 
 
