@@ -41,7 +41,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-33: [UIScreenEdgePanGestureRecognizer](#demo-33-uiscreenedgepangesturerecognizer)
 + Demo-34: [UILongPressGestureRecognizer](#demo-34-uilongpressgesturerecognizer)
 + Demo-35: UIPageControl
-+ Demo-36: Indexed Table View
++ Demo-36: [Indexed Table View](#demo-36-indexed-table-view)
 + Demo-37: Grouped Table View
 
 
@@ -275,7 +275,10 @@ Sample project demonstrate how to detect long press gesture using UILongPressGes
 Coming Soon.
 
 ## Demo-36: Indexed Table View
-Coming Soon.
+Sample project demonstrate how display indexed list within UITableView from array. i.e. first sort the product list array, group items based on section and store into dictionary, and fillup data within UITableView accordingly.
+
+![ScreenShot](../master/Screenshots/demo36-1t.png)
+![ScreenShot](../master/Screenshots/demo36-2t.png)
 
 ## Demo-37: Grouped Table View
 Coming Soon.
