@@ -42,7 +42,7 @@ This repository consist small Xcode project for various UI element used within i
 + Demo-34: [UILongPressGestureRecognizer](#demo-34-uilongpressgesturerecognizer)
 + Demo-35: UIPageControl
 + Demo-36: [Indexed Table View](#demo-36-indexed-table-view)
-+ Demo-37: Grouped Table View
++ Demo-37: [Grouped Table View](#demo-37-grouped-table-view)
 
 
 ## Demo-1: UILabel
@@ -275,14 +275,16 @@ Sample project demonstrate how to detect long press gesture using UILongPressGes
 Coming Soon.
 
 ## Demo-36: Indexed Table View
-Sample project demonstrate how display indexed list within UITableView from array. i.e. first sort the product list array, group items based on section and store into dictionary, and fillup data within UITableView accordingly.
+Sample project demonstrate how display indexed list within UITableView from array. i.e. first sort product list array, group items based on section and store into dictionary, and fillup data within UITableView accordingly.
 
 ![ScreenShot](../master/Screenshots/demo36-1t.png)
 ![ScreenShot](../master/Screenshots/demo36-2t.png)
 
 ## Demo-37: Grouped Table View
-Coming Soon.
+Sample project demonstrate how display Grouped + Indexed list within UITableView from array. i.e. first sort product list array, group items based on section and store into dictionary, and fillup data within UITableView accordingly. (Note: This is same as indexed table view example, just change table style property to Grouped.)
 
+![ScreenShot](../master/Screenshots/demo37-1t.png)
+![ScreenShot](../master/Screenshots/demo37-2t.png)
 
 ## Image Source
 Images shown within sample are taken from unsplash and used for demo purpose only. I does not claim ownership over any images or icon used.
