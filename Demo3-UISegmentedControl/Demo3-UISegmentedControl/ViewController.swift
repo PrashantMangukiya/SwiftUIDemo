@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet var prioritySegControl: UISegmentedControl!
     
     // action - priority segmented changed
-    @IBAction func prioritySegControlValueChanged(sender: UISegmentedControl) {
+    @IBAction func prioritySegControlValueChanged(_ sender: UISegmentedControl) {
         // set label for selected priority
         self.priorityLabel.text  = self.priorityList[self.prioritySegControl.selectedSegmentIndex]
     }
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     @IBOutlet var genderSegControl: UISegmentedControl!
     
     // action - geneder segment changed
-    @IBAction func genderSegControlValueChanged(sender: UISegmentedControl) {
+    @IBAction func genderSegControlValueChanged(_ sender: UISegmentedControl) {
         // set image and label for selected gender
         let genderName: String = self.genderList[self.genderSegControl.selectedSegmentIndex]
         self.genderImageView.image = UIImage(named: genderName)

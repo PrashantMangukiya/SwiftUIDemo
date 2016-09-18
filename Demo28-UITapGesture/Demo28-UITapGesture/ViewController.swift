@@ -30,7 +30,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         self.tapGesture.delegate = self
         
         // set tap gesture target 
-        self.tapGesture.addTarget(self, action: "increaseCount")
+        self.tapGesture.addTarget(self, action: #selector(ViewController.increaseCount))
     
         // add tap gesture recognizer into view
         self.view.addGestureRecognizer(self.tapGesture)

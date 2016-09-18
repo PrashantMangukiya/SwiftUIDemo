@@ -21,14 +21,14 @@ class ViewController: UIViewController {
     @IBOutlet var displayLabel: UILabel!
     
     // action - ready switch toggle
-    @IBAction func readySwitchAction(sender: UISwitch) {
-        if sender.on {
+    @IBAction func readySwitchAction(_ sender: UISwitch) {
+        if sender.isOn {
             self.displayText = "Ready"
         }else{
             self.displayText = "Not Ready"
         }
         
-        if self.bracketSwitch.on {
+        if self.bracketSwitch.isOn {
             self.displayLabel.text = "( " + self.displayText + " )"
         }else{
             self.displayLabel.text = self.displayText
@@ -36,8 +36,8 @@ class ViewController: UIViewController {
     }
     
     // action - size switch toggle
-    @IBAction func sizeSwitchAction(sender: UISwitch) {
-        if sender.on {
+    @IBAction func sizeSwitchAction(_ sender: UISwitch) {
+        if sender.isOn {
             self.displayLabel.font = UIFont(name: self.displayLabel.font.fontName, size: CGFloat(40))
         }else{
             self.displayLabel.font = UIFont(name: self.displayLabel.font.fontName, size: CGFloat(20))
@@ -45,17 +45,17 @@ class ViewController: UIViewController {
     }
     
     // action - color switch toggle
-    @IBAction func colorSwitchAction(sender: UISwitch) {
-        if sender.on {
-            self.displayLabel.textColor = UIColor.redColor()
+    @IBAction func colorSwitchAction(_ sender: UISwitch) {
+        if sender.isOn {
+            self.displayLabel.textColor = UIColor.red
         }else{
-            self.displayLabel.textColor = UIColor.blackColor()
+            self.displayLabel.textColor = UIColor.black
         }
     }
     
     // action - bracket switch toggle
-    @IBAction func bracketSwitchAction(sender: UISwitch) {
-        if sender.on {
+    @IBAction func bracketSwitchAction(_ sender: UISwitch) {
+        if sender.isOn {
             self.displayLabel.text = "( " + self.displayText + " )"
         }else{
             self.displayLabel.text = self.displayText

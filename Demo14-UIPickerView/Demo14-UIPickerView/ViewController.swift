@@ -50,12 +50,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     // MARK: - picker view delegate and data source
     
     // how many component (i.e. column) to be displayed within picker view
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }
     
     // How many rows are there is each component
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
 
         if component == 0 {
             return  self.colorList.count
@@ -69,7 +69,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     // title/content for row in given component
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if component == 0 {
             return self.colorList[row]
@@ -83,7 +83,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     // called when row selected from any component within a picker view
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
         if component == 0 {
             // if first row then set --
@@ -109,7 +109,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     // MARK: - Utility functions
     
     // function - create data
-    private func setupData(){
+    fileprivate func setupData(){
         
         // create color list
         self.colorList = ["(( Select ))", "Black", "Blue", "Brown", "Green", "Orange", "Pink" , "Purple", "Red", "Yellow"]

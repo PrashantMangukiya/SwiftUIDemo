@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var debugLabel: UILabel!
     
     // action - submit button
-    @IBAction func submitButtonAction(sender: UIButton) {
+    @IBAction func submitButtonAction(_ sender: UIButton) {
         
         // concate fullname, Email, Passord value from textField and show it to debug label.
         var debugMessage : String = ""
@@ -42,6 +42,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.fullName.delegate = self
         self.email.delegate = self
         self.password.delegate = self
+        
+        print("TEST")
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // move cursor to next text field when clicked return button,
     // close the keboard when last text field done.
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 
         // resign responder from given text field
         textField.resignFirstResponder()
@@ -71,12 +73,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // close keyboard upon touching the view anywhere.
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         // end editing mode for the view
         self.view.endEditing(true)
     }
     
-    
 }
-

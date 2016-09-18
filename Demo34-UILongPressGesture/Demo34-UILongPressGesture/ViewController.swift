@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         self.longPressGesture.minimumPressDuration = 1.0
         
         // add target for long press
-        self.longPressGesture.addTarget(self, action: "handleLongPress:")
+        self.longPressGesture.addTarget(self, action: #selector(ViewController.handleLongPress(_:)))
         
         // add long press gesture in to view
         self.view.addGestureRecognizer(self.longPressGesture)
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     
     // if long press not in progress then create a circle view at the long press touch location.
-    func handleLongPress(gesture: UILongPressGestureRecognizer) {
+    func handleLongPress(_ gesture: UILongPressGestureRecognizer) {
         
         // if long press in progress then return
         if self.isLongPressInProgress {
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         self.isLongPressInProgress = true
         
         // find touch/long press location
-        let touchLocation = gesture.locationInView(self.view)
+        let touchLocation = gesture.location(in: self.view)
         
         // create frame having touched point as the center of frame
         let myFrame = CGRect(x: touchLocation.x - 25 , y: touchLocation.y - 25, width: 50, height: 50)
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     }
     
     // set long press in progress to false when touch begin
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.isLongPressInProgress = false
     }
     

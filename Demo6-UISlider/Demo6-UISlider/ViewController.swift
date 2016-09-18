@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     // outlet & action - slider1
     @IBOutlet var mySlider1: UISlider!
-    @IBAction func mySlider1Action(sender: UISlider) {
+    @IBAction func mySlider1Action(_ sender: UISlider) {
         self.myLabel1.text = "\(Int(sender.value))"
     }
     
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     // outlet & action - slider2
     @IBOutlet var mySlider2: UISlider!
-    @IBAction func mySlider2Action(sender: UISlider) {
+    @IBAction func mySlider2Action(_ sender: UISlider) {
         let currentValue = CGFloat(sender.value)
         self.myLabel2.font = UIFont(name: self.myLabel2.font.fontName, size: currentValue)
     }
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         
         // set font size for label2
         let currentValue = CGFloat(self.mySlider2.value)
-        self.myLabel2.font = UIFont(name: self.myLabel2.font.fontName, size: currentValue)
+        self.myLabel2.font = UIFont(name: self.myLabel2.font.fontName, size: currentValue)        
     }
 
     override func didReceiveMemoryWarning() {

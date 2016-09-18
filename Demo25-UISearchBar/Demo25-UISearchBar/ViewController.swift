@@ -66,11 +66,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK: - table view data source and delegate
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.isSearching == true {
             return self.fruitListSearching.count
         }else {
@@ -78,14 +78,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         
         if self.isSearching == true {
-            cell.textLabel?.text = self.fruitListSearching[indexPath.row]
+            cell.textLabel?.text = self.fruitListSearching[(indexPath as NSIndexPath).row]
         }else {
-            cell.textLabel?.text = self.fruitList[indexPath.row]
+            cell.textLabel?.text = self.fruitList[(indexPath as NSIndexPath).row]
         }
         
         return cell
@@ -95,7 +95,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK: - UISearchBar delegate
     
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         if self.mySearchBar.text!.isEmpty {
             
@@ -111,13 +111,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.isSearching = true
             
             // empty searching array
-            self.fruitListSearching.removeAll(keepCapacity: false)
+            self.fruitListSearching.removeAll(keepingCapacity: false)
             
             // find matching item and add it to the searcing array
             for i in 0..<self.fruitList.count {
             
                 let listItem : String = self.fruitList[i]
-                if listItem.lowercaseString.rangeOfString(self.mySearchBar.text!.lowercaseString) != nil {
+                if listItem.lowercased().range(of: self.mySearchBar.text!.lowercased()) != nil {
                     self.fruitListSearching.append(listItem)
                 }
             }
@@ -128,12 +128,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     // hide kwyboard when search button clicked
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.mySearchBar.resignFirstResponder()
     }
     
     // hide keyboard when cancel button clicked
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         self.mySearchBar.text = ""
         self.mySearchBar.resignFirstResponder()
         

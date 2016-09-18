@@ -35,16 +35,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         self.swipeGestureDown.delegate = self
         
         // set gesture direction
-        self.swipeGestureLeft.direction = UISwipeGestureRecognizerDirection.Left
-        self.swipeGestureRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.swipeGestureUp.direction = UISwipeGestureRecognizerDirection.Up
-        self.swipeGestureDown.direction = UISwipeGestureRecognizerDirection.Down
+        self.swipeGestureLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.swipeGestureRight.direction = UISwipeGestureRecognizerDirection.right
+        self.swipeGestureUp.direction = UISwipeGestureRecognizerDirection.up
+        self.swipeGestureDown.direction = UISwipeGestureRecognizerDirection.down
         
         // set gesture target
-        self.swipeGestureLeft.addTarget(self, action: "handleSwipeLeft:")
-        self.swipeGestureRight.addTarget(self, action: "handleSwipeRight:")
-        self.swipeGestureUp.addTarget(self, action: "handleSwipeUp:")
-        self.swipeGestureDown.addTarget(self, action: "handleSwipeDown:")
+        self.swipeGestureLeft.addTarget(self, action: #selector(ViewController.handleSwipeLeft(_:)))
+        self.swipeGestureRight.addTarget(self, action: #selector(ViewController.handleSwipeRight(_:)))
+        self.swipeGestureUp.addTarget(self, action: #selector(ViewController.handleSwipeUp(_:)))
+        self.swipeGestureDown.addTarget(self, action: #selector(ViewController.handleSwipeDown(_:)))
         
         // add gesture into view
         self.view.addGestureRecognizer(self.swipeGestureLeft)
@@ -64,7 +64,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Utility functions
     
     // function - handle swift left
-    func handleSwipeLeft (gesture: UISwipeGestureRecognizer) {
+    func handleSwipeLeft (_ gesture: UISwipeGestureRecognizer) {
         
         let newPosition = CGRect(x: self.sampleView.frame.origin.x - 20.0 , y: self.sampleView.frame.origin.y, width: self.sampleView.frame.width, height: self.sampleView.frame.height)
         
@@ -72,7 +72,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
 
     // function - handle swift right
-    func handleSwipeRight (gesture: UISwipeGestureRecognizer) {
+    func handleSwipeRight (_ gesture: UISwipeGestureRecognizer) {
         
         let newPosition = CGRect(x: self.sampleView.frame.origin.x + 20.0 , y: self.sampleView.frame.origin.y, width: self.sampleView.frame.width, height: self.sampleView.frame.height)
             
@@ -80,7 +80,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     // function - handle swift Up
-    func handleSwipeUp (gesture: UISwipeGestureRecognizer) {
+    func handleSwipeUp (_ gesture: UISwipeGestureRecognizer) {
         
         let newPosition = CGRect(x: self.sampleView.frame.origin.x, y: self.sampleView.frame.origin.y - 20.0, width: self.sampleView.frame.width, height: self.sampleView.frame.height)
             
@@ -88,7 +88,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     // function - handle swift Down
-    func handleSwipeDown (gesture: UISwipeGestureRecognizer) {
+    func handleSwipeDown (_ gesture: UISwipeGestureRecognizer) {
         
         let newPosition = CGRect(x: self.sampleView.frame.origin.x, y: self.sampleView.frame.origin.y + 20.0, width: self.sampleView.frame.width, height: self.sampleView.frame.height)
             

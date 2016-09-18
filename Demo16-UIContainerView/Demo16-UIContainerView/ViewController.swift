@@ -12,16 +12,16 @@ class ViewController: UIViewController {
 
     
     // action - segment control
-    @IBAction func segmentControlAction(sender: UISegmentedControl) {
+    @IBAction func segmentControlAction(_ sender: UISegmentedControl) {
         
         // Show/Hide container view based on segment control
         if sender.selectedSegmentIndex == 0 {
-            self.containerView1.hidden = false
-            self.containerView2.hidden = true
+            self.containerView1.isHidden = false
+            self.containerView2.isHidden = true
             
         }else if sender.selectedSegmentIndex == 1 {
-            self.containerView1.hidden = true
-            self.containerView2.hidden = false
+            self.containerView1.isHidden = true
+            self.containerView2.isHidden = false
         }
     }
     
@@ -39,10 +39,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // show first container at load time
-        self.containerView1.hidden = false
+        self.containerView1.isHidden = false
         
         // hide second container at load time
-        self.containerView2.hidden = true
+        self.containerView2.isHidden = true
         
     }
 

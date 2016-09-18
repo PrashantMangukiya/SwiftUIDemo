@@ -44,12 +44,12 @@ class ListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     // return the number of sections
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return self.fruitListGrouped.count
     }
 
     // return the number of rows
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // find section title
         let sectionTitle = self.sectionTitleList[section]
@@ -62,37 +62,37 @@ class ListTableViewController: UITableViewController {
     }
     
     // return cell for given row
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // collect reusable cell
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
 
         // Configure the cell...
         
         // find section title
-        let sectionTitle = self.sectionTitleList[indexPath.section]
+        let sectionTitle = self.sectionTitleList[(indexPath as NSIndexPath).section]
         
         // find fruit list for given section title
         let fruits = self.fruitListGrouped[sectionTitle]
         
         // find fruit name based on the row within section
-        cell.textLabel?.text = fruits![indexPath.row]
+        cell.textLabel?.text = fruits![(indexPath as NSIndexPath).row]
         
         // return cell
         return cell
     }
     
     // return section header title
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.sectionTitleList[section]
     }
     
     // return title list for section index
-    override func sectionIndexTitlesForTableView(tableView: UITableView) -> [String]? {
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
         return self.sectionTitleList
     }
     // return section for given section index title
-    override func tableView(tableView: UITableView, sectionForSectionIndexTitle title: String, atIndex index: Int) -> Int {
+    override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
         return index
     }
     
@@ -100,7 +100,7 @@ class ListTableViewController: UITableViewController {
     
     // MARK: - Utility functions
     
-    private func createData() {
+    fileprivate func createData() {
     
         // fill up data
         self.fruitList  = [
@@ -121,11 +121,11 @@ class ListTableViewController: UITableViewController {
         ]
 
         // sort the array  (Important)
-        self.fruitList = self.fruitList.sort()
+        self.fruitList = self.fruitList.sorted()
     }
     
     
-    private func splitDataInToSection() {
+    fileprivate func splitDataInToSection() {
         
         // set section title "" at initial
         var sectionTitle: String = ""

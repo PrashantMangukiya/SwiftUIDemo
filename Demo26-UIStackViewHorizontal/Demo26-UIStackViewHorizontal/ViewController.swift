@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     // outlet & action - add button
     @IBOutlet var addButton: UIBarButtonItem!
-    @IBAction func addButtonClicked(sender: UIBarButtonItem) {
+    @IBAction func addButtonClicked(_ sender: UIBarButtonItem) {
         
         // add image to stack view
         self.addImageToStackView()
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     
     // function - It will add new image to stack view and disable add
     // button if five images added.
-    private func addImageToStackView(){
+    fileprivate func addImageToStackView(){
         
         // find image name based on image index
         let imageName : String = self.imageList[self.imageCount]
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         let newImageView = UIImageView(image: newImage)
         
         // set image view content mode
-        newImageView.contentMode = UIViewContentMode.ScaleAspectFill
+        newImageView.contentMode = UIViewContentMode.scaleAspectFill
         
         // clip subview for image view
         newImageView.clipsToBounds = true
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
         
         // image image index go neyod 4 the disable add button
         if self.imageCount >= 5 {
-            self.addButton.enabled = false
+            self.addButton.isEnabled = false
         }
         
     }

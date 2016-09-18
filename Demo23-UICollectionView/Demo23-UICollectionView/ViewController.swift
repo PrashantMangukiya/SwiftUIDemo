@@ -24,7 +24,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     
     // action - radious change stepper
-    @IBAction func radiousStepperAction(sender: UIStepper) {
+    @IBAction func radiousStepperAction(_ sender: UIStepper) {
         
         // set new radious
         self.photoCornerRadious = Int(sender.value)
@@ -56,26 +56,26 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // MARK: - collection view data source and delegate
     
     // number of sections within collection
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     // number of items/records within section
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.photoList.count
     }
     
     // set cell content and return it
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // collect reusable cell
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("myCell", forIndexPath: indexPath) as! PhotoCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myCell", for: indexPath) as! PhotoCollectionViewCell
         
         // set corner radious
         cell.setCornerRadious(photoCornerRadious)
         
         // set image within cell
-        cell.photoImageView.image = UIImage(named: self.photoList[indexPath.row])
+        cell.photoImageView.image = UIImage(named: self.photoList[(indexPath as NSIndexPath).row])
         
         // return cell
         return cell

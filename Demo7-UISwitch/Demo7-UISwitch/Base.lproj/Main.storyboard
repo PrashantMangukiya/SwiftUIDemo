@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nf2-mx-8Yc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nf2-mx-8Yc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--UISwitch-->
@@ -13,11 +14,10 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tn3-xf-YIV">
-                                <rect key="frame" x="251" y="84" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="rdB-P3-ZAC"/>
                                 </constraints>
@@ -26,7 +26,6 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready Status?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKg-K2-7Zr">
-                                <rect key="frame" x="20" y="84" width="223" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="7Pu-Qe-GEz"/>
                                 </constraints>
@@ -35,7 +34,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Large Size?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-bt-G9j">
-                                <rect key="frame" x="20" y="135" width="223" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="YPj-IH-nPq"/>
                                 </constraints>
@@ -44,27 +42,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aag-qk-YU6">
-                                <rect key="frame" x="251" y="135" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="oQN-3F-Zc5"/>
                                 </constraints>
-                                <color key="onTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="sizeSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="bMS-LG-JgD"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h0W-8T-Ysc">
-                                <rect key="frame" x="251" y="186" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="fLq-C4-1nQ"/>
                                 </constraints>
-                                <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="colorSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="sCK-zC-cAo"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cover With Bracket?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUC-9o-cF0">
-                                <rect key="frame" x="20" y="237" width="223" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="pEa-Bj-Ash"/>
                                 </constraints>
@@ -73,17 +68,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AGr-ZW-bLN">
-                                <rect key="frame" x="251" y="237" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="kmG-wP-fxO"/>
                                 </constraints>
-                                <color key="onTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="onTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="bracketSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Cc-zC-FgH"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Ready" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIn-P5-E28">
-                                <rect key="frame" x="20" y="360" width="280" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="I19-9Q-Kcd"/>
                                 </constraints>
@@ -92,7 +85,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make It Red?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9Q-6a-2cv">
-                                <rect key="frame" x="20" y="186" width="223" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="58J-xo-jc8"/>
                                 </constraints>
@@ -101,7 +93,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eIn-P5-E28" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="3RU-vX-ycW"/>
                             <constraint firstItem="q9Q-6a-2cv" firstAttribute="top" secondItem="0hl-bt-G9j" secondAttribute="bottom" constant="20" id="4b7-xa-waL"/>
@@ -133,7 +125,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UISwitch" id="8aT-sw-PuM"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="bracketSwitch" destination="AGr-ZW-bLN" id="xJp-iP-Gcp"/>
                         <outlet property="colorSwitch" destination="q9Q-6a-2cv" id="yRq-IN-vbI"/>
@@ -144,14 +135,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="366"/>
+            <point key="canvasLocation" x="1658" y="365"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FAn-Ze-d29">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nf2-mx-8Yc" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DYv-25-1dN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -14,14 +14,14 @@ class ViewController: UIViewController {
             
     // action - help button clicked
     
-    @IBAction func helpButtonAction(sender: UIBarButtonItem) {
-        self.performSegueWithIdentifier("segueHelp", sender: self)
+    @IBAction func helpButtonAction(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "segueHelp", sender: self)
     }
     
     
     // action - settings button clicked
-    @IBAction func settingsButtonAction(sender: UIBarButtonItem) {
-        self.performSegueWithIdentifier("segueSettings", sender: self)
+    @IBAction func settingsButtonAction(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "segueSettings", sender: self)
     }
     
     
@@ -42,20 +42,20 @@ class ViewController: UIViewController {
     
     // MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
         
         // set title for help screen
         if segue.identifier == "segueHelp" {
-            let destVc = segue.destinationViewController as! HelpViewController
+            let destVc = segue.destination as! HelpViewController
             destVc.navigationItem.title = "Help"
         }
 
         // set title for Settings screen
         if segue.identifier == "segueSettings" {
-            let destVc = segue.destinationViewController as! SettingsViewController
+            let destVc = segue.destination as! SettingsViewController
             destVc.navigationItem.title = "Settings"
         }
         

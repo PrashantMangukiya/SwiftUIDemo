@@ -48,12 +48,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Mark: - Table view data source and delegate
     
     // set number of sections within table view
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
 
     // set number for rows for each setion
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return self.fruits.count
         }
@@ -68,7 +68,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     // set header title for each section
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return "Fruits"
         }
@@ -83,22 +83,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     // set cell content for each row
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // deque reusable cell
-        let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as UITableViewCell
         
         // set item title
-        if indexPath.section == 0 {
-            cell.textLabel?.text = self.fruits[indexPath.row]
+        if (indexPath as NSIndexPath).section == 0 {
+            cell.textLabel?.text = self.fruits[(indexPath as NSIndexPath).row]
         }
         
-        if indexPath.section == 1 {
-            cell.textLabel?.text = self.vegetables[indexPath.row]
+        if (indexPath as NSIndexPath).section == 1 {
+            cell.textLabel?.text = self.vegetables[(indexPath as NSIndexPath).row]
         }
 
-        if indexPath.section == 2 {
-            cell.textLabel?.text = self.others[indexPath.row]
+        if (indexPath as NSIndexPath).section == 2 {
+            cell.textLabel?.text = self.others[(indexPath as NSIndexPath).row]
         }
         
         // return cell
@@ -106,15 +106,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     // go to details screen when clicked on a table row.
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("segueDetails", sender: self)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "segueDetails", sender: self)
     }
     
     
     
     // MARK: - Navigation functiona
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     // Get the new view controller using segue.destinationViewController.
     // Pass the selected object to the new view controller.
         
@@ -124,20 +124,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let selectedIndexPath = self.myTableView.indexPathForSelectedRow
 
             // deselet row
-            self.myTableView.deselectRowAtIndexPath(selectedIndexPath!, animated: true)
+            self.myTableView.deselectRow(at: selectedIndexPath!, animated: true)
             
             // set title
             var selectedTitle = ""
-            if selectedIndexPath!.section == 0 {
-                selectedTitle = self.fruits[selectedIndexPath!.row]
-            }else if selectedIndexPath!.section == 1 {
-                selectedTitle = self.vegetables[selectedIndexPath!.row]
-            }else if selectedIndexPath!.section == 2 {
-                selectedTitle = self.others[selectedIndexPath!.row]
+            if (selectedIndexPath! as NSIndexPath).section == 0 {
+                selectedTitle = self.fruits[(selectedIndexPath! as NSIndexPath).row]
+            }else if (selectedIndexPath! as NSIndexPath).section == 1 {
+                selectedTitle = self.vegetables[(selectedIndexPath! as NSIndexPath).row]
+            }else if (selectedIndexPath! as NSIndexPath).section == 2 {
+                selectedTitle = self.others[(selectedIndexPath! as NSIndexPath).row]
             }
             
             // create object for destination view controller
-            let destVc = segue.destinationViewController  as! DetailsViewController
+            let destVc = segue.destination  as! DetailsViewController
             
             // set value for selected item name within destination view controller
             destVc.selectedItemName = selectedTitle

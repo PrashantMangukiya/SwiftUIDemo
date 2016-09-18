@@ -29,7 +29,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         self.rotateGesture.delegate = self
         
         // add rotate gesture target
-        self.rotateGesture.addTarget(self, action: "rotateView:")
+        self.rotateGesture.addTarget(self, action: #selector(ViewController.rotateView(_:)))
     
         // add rotate gesture within view
         self.view.addGestureRecognizer(rotateGesture)
@@ -44,9 +44,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: - Utility functions
     
-    func rotateView(gesture: UIRotationGestureRecognizer) {
+    func rotateView(_ gesture: UIRotationGestureRecognizer) {
         
-        self.sampleView.transform = CGAffineTransformRotate(self.sampleView.transform, gesture.rotation)
+        self.sampleView.transform = self.sampleView.transform.rotated(by: gesture.rotation)
         
         gesture.rotation = 0
     }

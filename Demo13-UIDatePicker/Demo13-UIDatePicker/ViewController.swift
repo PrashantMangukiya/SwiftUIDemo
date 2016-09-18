@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     
     // date formatter
-    var dateFormatter: NSDateFormatter!
+    var dateFormatter: DateFormatter!
     
     // outlet - date label
     @IBOutlet var dateLabel: UILabel!
@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     
     // outlet & action - date picker
     @IBOutlet var datePicker: UIDatePicker!
-    @IBAction func datePickerAction(sender: UIDatePicker) {
+    @IBAction func datePickerAction(_ sender: UIDatePicker) {
         // assign date to label when date picker value changed
-        self.dateLabel.text = self.dateFormatter.stringFromDate(sender.date)
+        self.dateLabel.text = self.dateFormatter.string(from: sender.date)
     }
     
     
@@ -34,12 +34,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // set date formater for short date/time
-        self.dateFormatter = NSDateFormatter()
-        self.dateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
-        self.dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        self.dateFormatter = DateFormatter()
+        self.dateFormatter.dateStyle = DateFormatter.Style.long
+        self.dateFormatter.timeStyle = DateFormatter.Style.short
         
         // assign date picker date value to label
-        self.dateLabel.text = self.dateFormatter.stringFromDate(self.datePicker.date)
+        self.dateLabel.text = self.dateFormatter.string(from: self.datePicker.date)
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,8 +12,8 @@
 		8F03A8C51BC22A6000967D9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F03A8C31BC22A6000967D9C /* Main.storyboard */; };
 		8F03A8C71BC22A6000967D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F03A8C61BC22A6000967D9C /* Assets.xcassets */; };
 		8F03A8CA1BC22A6000967D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F03A8C81BC22A6000967D9C /* LaunchScreen.storyboard */; };
-		8F03A8D21BC22F6F00967D9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F03A8D11BC22F6F00967D9C /* SettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		8F03A8D41BC22F9100967D9C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F03A8D31BC22F9100967D9C /* HelpViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8F03A8D21BC22F6F00967D9C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F03A8D11BC22F6F00967D9C /* SettingsViewController.swift */; };
+		8F03A8D41BC22F9100967D9C /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F03A8D31BC22F9100967D9C /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,11 +96,12 @@
 		8F03A8B41BC22A6000967D9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "PrashantKumar Mangukiya";
 				TargetAttributes = {
 					8F03A8BB1BC22A6000967D9C = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -182,8 +183,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -227,8 +230,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -247,6 +252,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -260,6 +266,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantmangukiya.ios.Demo20-UINavigationBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -271,6 +278,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantmangukiya.ios.Demo20-UINavigationBar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -293,6 +301,7 @@
 				8F03A8D01BC22A6000967D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

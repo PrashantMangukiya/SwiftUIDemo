@@ -27,12 +27,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // add target for gesture
-        self.leftEdgePanGesture.addTarget(self, action: "handleLeftEdge:")
-        self.rightEdgePanGesture.addTarget(self, action: "handleRightEdge:")
+        self.leftEdgePanGesture.addTarget(self, action: #selector(ViewController.handleLeftEdge(_:)))
+        self.rightEdgePanGesture.addTarget(self, action: #selector(ViewController.handleRightEdge(_:)))
 
         // set detection edge
-        self.leftEdgePanGesture.edges = UIRectEdge.Left
-        self.rightEdgePanGesture.edges = UIRectEdge.Right
+        self.leftEdgePanGesture.edges = UIRectEdge.left
+        self.rightEdgePanGesture.edges = UIRectEdge.right
         
         // add gesture into view
         self.view.addGestureRecognizer(self.leftEdgePanGesture)
@@ -49,15 +49,15 @@ class ViewController: UIViewController {
     // Mark: - Utility functions
     
     // perform operation when left edge gesture detected
-    func handleLeftEdge( gesture: UIScreenEdgePanGestureRecognizer ) {
+    func handleLeftEdge( _ gesture: UIScreenEdgePanGestureRecognizer ) {
         self.statusLabel.text = "Left Edge"
-        self.statusLabel.textColor = UIColor.blackColor()
+        self.statusLabel.textColor = UIColor.black
     }
 
     // perform operation when right edge gesture detected    
-    func handleRightEdge( gesture: UIScreenEdgePanGestureRecognizer ) {
+    func handleRightEdge( _ gesture: UIScreenEdgePanGestureRecognizer ) {
         self.statusLabel.text = "Right Edge"
-        self.statusLabel.textColor = UIColor.blueColor()
+        self.statusLabel.textColor = UIColor.blue
     }
     
 

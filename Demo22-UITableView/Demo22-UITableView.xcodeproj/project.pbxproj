@@ -12,7 +12,7 @@
 		8FEB5B711BC4CF3100E0DCA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEB5B6F1BC4CF3100E0DCA2 /* Main.storyboard */; };
 		8FEB5B731BC4CF3100E0DCA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FEB5B721BC4CF3100E0DCA2 /* Assets.xcassets */; };
 		8FEB5B761BC4CF3100E0DCA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEB5B741BC4CF3100E0DCA2 /* LaunchScreen.storyboard */; };
-		8FEB5B7E1BC4D85B00E0DCA2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB5B7D1BC4D85B00E0DCA2 /* DetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8FEB5B7E1BC4D85B00E0DCA2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEB5B7D1BC4D85B00E0DCA2 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,11 +93,12 @@
 		8FEB5B601BC4CF3100E0DCA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "PrashantKumar Mangukiya";
 				TargetAttributes = {
 					8FEB5B671BC4CF3100E0DCA2 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -178,8 +179,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -223,8 +226,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -243,6 +248,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -256,6 +262,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantmangukiya.ios.Demo22-UITableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -267,6 +274,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantmangukiya.ios.Demo22-UITableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

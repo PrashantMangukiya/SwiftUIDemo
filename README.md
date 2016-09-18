@@ -2,8 +2,8 @@
 This repository consist small Xcode project for various UI element used within iOS application. All sample build in such a way that you will get clear idea how to use practically each UI Element within swift based application. You can use this free for personal or commercial use.
 
 ### Platform & Supported Device
-+ Swift 2, Xcode 7, iOS 9
-+ iPhone 4s, 5, 5s, 5c, 6, 6 Plus, 6s, 6s Plus, all iPad having iOS 9.
++ Swift3, Xcode8, iOS10
++ iPhone 4s, 5, 5s, 5c, SE, 6, 6 Plus, 6s, 6s Plus, 7, 7 Plus and all iPad having iOS9 or iOS10.
 
 ## Index
 + Demo-1: [UILabel](#demo-1-uilabel)

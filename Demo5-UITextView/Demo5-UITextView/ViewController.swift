@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet var myTextView: UITextView!
     
     //action - done button
-    @IBAction func doneButtonAction(sender: UIButton) {
+    @IBAction func doneButtonAction(_ sender: UIButton) {
         self.myTextView.resignFirstResponder()
     }
     
@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     
 
     // close keyboard when touch the view
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         // end editing mode for view
         self.view.endEditing(true)

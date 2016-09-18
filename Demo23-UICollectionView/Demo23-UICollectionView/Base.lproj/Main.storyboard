@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hta-jZ-wqI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Hta-jZ-wqI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Photos-->
@@ -13,13 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fyl-7L-waN">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="kW5-Hp-mDW">
                                     <size key="itemSize" width="73" height="73"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -28,21 +27,15 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="DSW-Hm-HP0" customClass="PhotoCollectionViewCell" customModule="Demo23_UICollectionView" customModuleProvider="target">
-                                        <rect key="frame" x="5" y="69" width="73" height="73"/>
+                                        <rect key="frame" x="5" y="5" width="73" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UYu-UC-e6Y">
-                                                    <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
-                                                    <animations/>
-                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UYu-UC-e6Y"/>
                                             </subviews>
-                                            <animations/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="UYu-UC-e6Y" secondAttribute="bottom" id="01F-oI-tCS"/>
                                             <constraint firstAttribute="trailing" secondItem="UYu-UC-e6Y" secondAttribute="trailing" id="c1P-Ib-vtb"/>
@@ -56,8 +49,6 @@
                                 </cells>
                             </collectionView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0S-7f-4Fs">
-                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="QkJ-46-hEj"/>
                                 </constraints>
@@ -65,9 +56,8 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="seb-Il-KWd"/>
                                     <barButtonItem style="plain" id="j95-3F-ZCr">
                                         <stepper key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="5" id="huA-fb-P83">
-                                            <rect key="frame" x="113" y="7.5" width="94" height="29"/>
+                                            <rect key="frame" x="113" y="8" width="94" height="29"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <animations/>
                                             <connections>
                                                 <action selector="radiousStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6VT-AG-rRT"/>
                                             </connections>
@@ -77,8 +67,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fyl-7L-waN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EWh-Eb-GSm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q0S-7f-4Fs" secondAttribute="bottom" id="XPM-9M-6q9"/>
@@ -90,25 +79,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photos" id="GTr-fd-pEN"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="photosCollectionView" destination="fyl-7L-waN" id="THB-dm-fGw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="364"/>
+            <point key="canvasLocation" x="1682" y="363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h0a-Bg-6g0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hta-jZ-wqI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aUR-fo-h9B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

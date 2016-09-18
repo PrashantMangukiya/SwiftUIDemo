@@ -29,7 +29,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         self.pinchGesture.delegate = self
         
         // set pinch gesture target
-        self.pinchGesture = UIPinchGestureRecognizer(target: self, action: "pinchRecognized:")
+        self.pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(ViewController.pinchRecognized(_:)))
         
         // add pinch gesture recognizer to view
         self.view.addGestureRecognizer(self.pinchGesture)
@@ -44,10 +44,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: - Utility functions
     
-    func pinchRecognized(pinch: UIPinchGestureRecognizer) {
+    func pinchRecognized(_ pinch: UIPinchGestureRecognizer) {
         
         // change view scale based on pinch
-        self.squareView.transform = CGAffineTransformScale(self.squareView.transform, pinch.scale, pinch.scale)
+        self.squareView.transform = self.squareView.transform.scaledBy(x: pinch.scale, y: pinch.scale)
         pinch.scale = 1.0
     }
     

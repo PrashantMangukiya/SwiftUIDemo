@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     // outlet & action - Prev button
     @IBOutlet var previousButton: UIBarButtonItem!
-    @IBAction func previousButtonAction(sender: UIBarButtonItem) {
+    @IBAction func previousButtonAction(_ sender: UIBarButtonItem) {
         
         // set prev content mode in the list
         if self.contentModeIndex >= 0 {
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     
     // outlet & action - Next button
     @IBOutlet var nextButton: UIBarButtonItem!
-    @IBAction func nextButtonAction(sender: UIBarButtonItem) {
+    @IBAction func nextButtonAction(_ sender: UIBarButtonItem) {
         
         // set next content mode in the list
         if self.contentModeIndex < self.contentModeList.count {
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     
     // outlet & action - swap image button
     @IBOutlet var swapButton: UIBarButtonItem!
-    @IBAction func swapButtonAction(sender: UIBarButtonItem) {
+    @IBAction func swapButtonAction(_ sender: UIBarButtonItem) {
         
         // swap image index
         if self.imageIndex == 0 {
@@ -80,7 +80,7 @@ class ViewController: UIViewController {
     
     // outlet & action - reset button
     @IBOutlet var resetButton: UIBarButtonItem!
-    @IBAction func resetButtonAction(sender: UIBarButtonItem) {
+    @IBAction func resetButtonAction(_ sender: UIBarButtonItem) {
         
         // set default content mode index
         self.contentModeIndex  = 0
@@ -129,7 +129,7 @@ class ViewController: UIViewController {
     // MARK:  - utility function
     
     // create/load sample data
-    private func loadData() {
+    fileprivate func loadData() {
     
         // initialise content mode list
         self.contentModeList = [
@@ -153,12 +153,12 @@ class ViewController: UIViewController {
     }
     
     // set image to image view
-    private func setImage(){
+    fileprivate func setImage(){
         self.myImageView.image = UIImage(named: self.imageList[self.imageIndex])
     }
     
     // set imageView content mode
-    private func setImageContentMode(){
+    fileprivate func setImageContentMode(){
         
         // set content mode
         self.myImageView.contentMode = UIViewContentMode.init(rawValue: self.contentModeIndex)!
@@ -171,17 +171,17 @@ class ViewController: UIViewController {
     }
     
     // enable/disable prev next button
-    private func setButton(){
+    fileprivate func setButton(){
         
         if self.contentModeIndex == 0 {
-            self.previousButton.enabled = false
-            self.nextButton.enabled = true
+            self.previousButton.isEnabled = false
+            self.nextButton.isEnabled = true
         }else if ( self.contentModeIndex == self.contentModeList.count - 1 ) {
-            self.previousButton.enabled = true
-            self.nextButton.enabled = false
+            self.previousButton.isEnabled = true
+            self.nextButton.isEnabled = false
         }else{
-            self.previousButton.enabled = true
-            self.nextButton.enabled = true
+            self.previousButton.isEnabled = true
+            self.nextButton.isEnabled = true
         }
         
     }

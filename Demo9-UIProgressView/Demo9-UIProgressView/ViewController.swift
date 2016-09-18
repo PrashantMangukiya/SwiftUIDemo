@@ -12,7 +12,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // timer - used to increment progress
-    var myTimer: NSTimer?
+    var myTimer: Timer?
     
     // outlet - progress view
     @IBOutlet var progressView1: UIProgressView!
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     // action & outlet: play button
     @IBOutlet var playButton: UIBarButtonItem!
-    @IBAction func playButtonAction(sender: UIBarButtonItem) {
+    @IBAction func playButtonAction(_ sender: UIBarButtonItem) {
         
         // it progress reach 1 then reset it to 0.0
         if self.progressView1.progress >= 1 {
@@ -30,17 +30,17 @@ class ViewController: UIViewController {
         }
         
         // schedule timer
-        self.myTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("updateProgress"), userInfo: nil, repeats: true)
+        self.myTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(ViewController.updateProgress), userInfo: nil, repeats: true)
     
         // enable/disable button
-        self.playButton.enabled = false
-        self.resetButton.enabled = false
-        self.pauseButton.enabled = true
+        self.playButton.isEnabled = false
+        self.resetButton.isEnabled = false
+        self.pauseButton.isEnabled = true
     }
     
     // action & outlet: reset button
     @IBOutlet var resetButton: UIBarButtonItem!
-    @IBAction func resetButtonAction(sender: UIBarButtonItem) {
+    @IBAction func resetButtonAction(_ sender: UIBarButtonItem) {
         
         // reset progress view
         self.progressView1.progress = 0.0
@@ -49,22 +49,22 @@ class ViewController: UIViewController {
         self.progressLabel.text = "0"
 
         // enable/disable button
-        self.playButton.enabled = true
-        self.resetButton.enabled = true
-        self.pauseButton.enabled = false
+        self.playButton.isEnabled = true
+        self.resetButton.isEnabled = true
+        self.pauseButton.isEnabled = false
     }
     
     // action & outlet: pause button
     @IBOutlet var pauseButton: UIBarButtonItem!
-    @IBAction func pauseButtonAction(sender: UIBarButtonItem) {
+    @IBAction func pauseButtonAction(_ sender: UIBarButtonItem) {
 
         // invalidate timer
         self.myTimer?.invalidate()
 
         // enable/disable button
-        self.playButton.enabled = true
-        self.resetButton.enabled = true
-        self.pauseButton.enabled = false
+        self.playButton.isEnabled = true
+        self.resetButton.isEnabled = true
+        self.pauseButton.isEnabled = false
     }
     
     
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // create timer
-        self.myTimer = NSTimer()
+        self.myTimer = Timer()
         
         // set progress view default value and label
         self.progressView1.progress = 0.0
@@ -86,13 +86,13 @@ class ViewController: UIViewController {
         self.progressLabel.text = "\(proressValue)"
         
         // enable play button
-        self.playButton.enabled = true
+        self.playButton.isEnabled = true
         
         // enable reset button
-        self.resetButton.enabled = false
+        self.resetButton.isEnabled = false
         
         // disable pause button
-        self.pauseButton.enabled = false
+        self.pauseButton.isEnabled = false
     }
     
     override func didReceiveMemoryWarning() {
@@ -120,9 +120,9 @@ class ViewController: UIViewController {
             self.myTimer?.invalidate()
             
             // enable/disable button 
-            self.playButton.enabled = true
-            self.resetButton.enabled = true
-            self.pauseButton.enabled = false
+            self.playButton.isEnabled = true
+            self.resetButton.isEnabled = true
+            self.pauseButton.isEnabled = false
         }
         
     }

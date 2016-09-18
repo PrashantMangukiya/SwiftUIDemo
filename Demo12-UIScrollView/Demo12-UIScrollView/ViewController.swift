@@ -39,7 +39,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
 
     // must written within view did appear, so it will have proper width and height available.
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         // set scroll view content size same as image size
         self.myScrollView.contentSize = self.myImageView.bounds.size
@@ -48,10 +48,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         self.myScrollView.autoresizesSubviews = true
         
         // set content at (top,let) within scroll view
-        self.myScrollView.contentOffset = CGPointZero
+        self.myScrollView.contentOffset = CGPoint.zero
         
         // set scroll view bg color
-        self.myScrollView.backgroundColor = UIColor.darkGrayColor()
+        self.myScrollView.backgroundColor = UIColor.darkGray
         
          // add imageview within scroll view
         self.myScrollView.addSubview(self.myImageView)
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     // MARK: - scroll view delegate
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.myImageView
     }
     

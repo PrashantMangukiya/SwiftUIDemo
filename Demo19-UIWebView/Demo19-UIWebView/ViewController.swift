@@ -21,7 +21,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     @IBOutlet var mySpinner: UIActivityIndicatorView!
     
     // action - refresh button
-    @IBAction func refreshButtonAction(sender: UIBarButtonItem) {
+    @IBAction func refreshButtonAction(_ sender: UIBarButtonItem) {
         self.mySpinner.startAnimating()
         self.myWebView.reload()
     }
@@ -44,8 +44,8 @@ class ViewController: UIViewController, UIWebViewDelegate {
         self.mySpinner.startAnimating()
         
         // load url content within webview
-        if let urlToBrowse = NSURL(string: self.urlString) {
-            let urlRequest = NSURLRequest(URL: urlToBrowse)
+        if let urlToBrowse = URL(string: self.urlString) {
+            let urlRequest = URLRequest(url: urlToBrowse)
             self.myWebView.loadRequest(urlRequest)
         }
         
@@ -60,7 +60,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
         
     // MARK: - Web view delegate function
     
-    func webViewDidFinishLoad(webView: UIWebView) {
+    func webViewDidFinishLoad(_ webView: UIWebView) {
         self.mySpinner.stopAnimating()
     }
     

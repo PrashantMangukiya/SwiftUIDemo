@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     // outlet & action - stepper1
     @IBOutlet var stepper1: UIStepper!
-    @IBAction func stepper1Action(sender: UIStepper) {
+    @IBAction func stepper1Action(_ sender: UIStepper) {
         self.counterLabel.text = "\(Int(sender.value))"
     }
     
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     // outlet & action - stepper2
     @IBOutlet var stepper2: UIStepper!
-    @IBAction func stepper2Action(sender: UIStepper) {
+    @IBAction func stepper2Action(_ sender: UIStepper) {
         self.messageLabel.font = UIFont(name: self.messageLabel.font.fontName, size: CGFloat(self.stepper2.value))
     }
     
@@ -47,4 +47,3 @@ class ViewController: UIViewController {
 
 
 }
-

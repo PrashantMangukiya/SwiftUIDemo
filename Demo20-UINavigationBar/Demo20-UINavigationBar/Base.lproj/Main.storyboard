@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JqG-XP-8zV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JqG-XP-8zV">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -13,11 +14,10 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UINavigationBar Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="LZz-OP-QKr">
-                                <rect key="frame" x="20" y="260" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hRS-Ke-r8N"/>
                                 </constraints>
@@ -26,7 +26,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ftF-Sb-R8O">
-                                <rect key="frame" x="20" y="160" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="pC8-yH-dR3"/>
                                 </constraints>
@@ -35,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="LZz-OP-QKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3tu-7T-TpL"/>
                             <constraint firstItem="ftF-Sb-R8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AoV-BO-lcd"/>
@@ -59,7 +58,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="LYd-D1-iD9" kind="show" identifier="segueSettings" id="OPY-Fq-f0U"/>
                         <segue destination="vxz-5C-wc2" kind="show" identifier="segueHelp" id="RVq-7c-B4R"/>
@@ -67,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280" y="366"/>
+            <point key="canvasLocation" x="1641" y="365"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="9KO-dB-XMq">
@@ -78,11 +76,10 @@
                         <viewControllerLayoutGuide type="bottom" id="KDH-3x-a8g"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="M5N-0i-jrB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="0ym-mw-aMw">
-                                <rect key="frame" x="20" y="210" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Nkt-fm-gCv"/>
                                 </constraints>
@@ -91,7 +88,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0ym-mw-aMw" firstAttribute="centerY" secondItem="M5N-0i-jrB" secondAttribute="centerY" id="BVT-4a-U0x"/>
                             <constraint firstAttribute="trailing" secondItem="0ym-mw-aMw" secondAttribute="trailing" constant="20" id="JpT-mg-gBd"/>
@@ -102,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lP-rS-xRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="595"/>
+            <point key="canvasLocation" x="2685" y="747"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="UER-p0-8ZZ">
@@ -113,11 +110,10 @@
                         <viewControllerLayoutGuide type="bottom" id="kn0-1M-h3F"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="60i-NB-dZO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="cqr-4X-SYY">
-                                <rect key="frame" x="20" y="210" width="280" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="wSk-XY-ioj"/>
                                 </constraints>
@@ -126,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cqr-4X-SYY" firstAttribute="leading" secondItem="60i-NB-dZO" secondAttribute="leading" constant="20" id="6r2-0D-iQo"/>
                             <constraint firstItem="cqr-4X-SYY" firstAttribute="centerX" secondItem="60i-NB-dZO" secondAttribute="centerX" id="8Ht-o0-Y0z"/>
@@ -134,18 +130,16 @@
                             <constraint firstItem="cqr-4X-SYY" firstAttribute="centerY" secondItem="60i-NB-dZO" secondAttribute="centerY" id="Spn-EN-KGt"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cq7-fK-dew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-3"/>
+            <point key="canvasLocation" x="2685" y="34"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gkj-cg-A1U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JqG-XP-8zV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2eA-ti-oqv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -157,7 +151,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eco-7H-ZtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="366"/>
+            <point key="canvasLocation" x="819" y="364"/>
         </scene>
     </scenes>
 </document>

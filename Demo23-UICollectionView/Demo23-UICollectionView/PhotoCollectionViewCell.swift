@@ -14,7 +14,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     @IBOutlet var photoImageView: UIImageView!
     
     // set corner radious for image view
-    func setCornerRadious(radious: Int) {
+    func setCornerRadious(_ radious: Int) {
 
         self.photoImageView.clipsToBounds = true
         

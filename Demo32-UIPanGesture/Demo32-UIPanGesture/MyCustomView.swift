@@ -11,7 +11,7 @@ import UIKit
 class MyCustomView: UIView {
 
     // last location for view
-    var lastSavedLocation = CGPointZero
+    var lastSavedLocation = CGPoint.zero
     
     
     override init(frame: CGRect) {
@@ -22,7 +22,7 @@ class MyCustomView: UIView {
         self.layer.borderWidth = 1.0
         
         // add pan gesture to view
-        let panGesture = UIPanGestureRecognizer(target: self, action: "handlePanGesture:")
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(MyCustomView.handlePanGesture(_:)))
         self.addGestureRecognizer(panGesture)
         
         // set view background color randomly
@@ -41,21 +41,21 @@ class MyCustomView: UIView {
     
     // MARK: - Utility functions
     
-    func handlePanGesture(gesture: UIPanGestureRecognizer) {
+    func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
 
         // find translation in main view
-        let newTranslation = gesture.translationInView(self.superview)
+        let newTranslation = gesture.translation(in: self.superview)
         
         // set current object to new position
-        self.center = CGPointMake(self.lastSavedLocation.x + newTranslation.x , self.lastSavedLocation.y + newTranslation.y)
+        self.center = CGPoint(x: self.lastSavedLocation.x + newTranslation.x , y: self.lastSavedLocation.y + newTranslation.y)
     }
     
     
     // detect touch for the current view and change last save postion
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         // move touched view to front.
-        self.superview?.bringSubviewToFront(self)
+        self.superview?.bringSubview(toFront: self)
         
         // save view location
         self.lastSavedLocation = self.center

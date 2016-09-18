@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet var toolbar: UIToolbar!
     
     // Action - toggle button
-    @IBAction func toggleButtonAction(sender: UIButton) {
+    @IBAction func toggleButtonAction(_ sender: UIButton) {
         
         
         // We are moving tool bar out of screen using animation.
         // i.e. we are changing the frame postion for the toolbar and change it's alpha.
-        UIView.animateWithDuration(1.0, animations: {
+        UIView.animate(withDuration: 1.0, animations: {
             () -> Void in
             
                 // show/hide toolbar
@@ -52,22 +52,22 @@ class ViewController: UIViewController {
     @IBOutlet var debugLabel: UILabel!
     
     // action - rewind button
-    @IBAction func rewindButtonAction(sender: UIBarButtonItem) {
+    @IBAction func rewindButtonAction(_ sender: UIBarButtonItem) {
         self.debugLabel.text = "Rewind - Action"
     }
 
     // action - play button
-    @IBAction func playButtonAction(sender: UIBarButtonItem) {
+    @IBAction func playButtonAction(_ sender: UIBarButtonItem) {
         self.debugLabel.text = "Play - Action"
     }
     
     // action - pause button
-    @IBAction func pauseButtonAction(sender: UIBarButtonItem) {
+    @IBAction func pauseButtonAction(_ sender: UIBarButtonItem) {
         self.debugLabel.text = "Pause - Action"
     }
     
     // action - forward button
-    @IBAction func forwardButtonAction(sender: UIBarButtonItem) {
+    @IBAction func forwardButtonAction(_ sender: UIBarButtonItem) {
         self.debugLabel.text = "Forward - Action"
     }
     

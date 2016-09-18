@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     
     // action - corder radious slider value changed
-    @IBAction func cornerSliderAction(sender: UISlider) {
+    @IBAction func cornerSliderAction(_ sender: UISlider) {
         
         // set corner radious from slider value
         self.myView.layer.cornerRadius = CGFloat(Int(sender.value))
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
 
     // action - border slider value changed
-    @IBAction func borderSliderAction(sender: UISlider) {
+    @IBAction func borderSliderAction(_ sender: UISlider) {
 
         // set border width from slider value
         self.myView.layer.borderWidth = CGFloat(Int(sender.value))

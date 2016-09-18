@@ -29,12 +29,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // set gesture direction
-        self.swipeGestureLeft.direction = UISwipeGestureRecognizerDirection.Left
-        self.swipeGestureRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.swipeGestureLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.swipeGestureRight.direction = UISwipeGestureRecognizerDirection.right
         
         // add gesture target
-        self.swipeGestureLeft.addTarget(self, action: "handleSwipeLeft:")
-        self.swipeGestureRight.addTarget(self, action: "handleSwipeRight:")
+        self.swipeGestureLeft.addTarget(self, action: #selector(ViewController.handleSwipeLeft(_:)))
+        self.swipeGestureRight.addTarget(self, action: #selector(ViewController.handleSwipeRight(_:)))
     
         // add gesture in to view
         self.view.addGestureRecognizer(self.swipeGestureLeft)
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     // MARK: - Utility function
     
     // increase page number on swift left
-    func handleSwipeLeft(gesture: UISwipeGestureRecognizer){
+    func handleSwipeLeft(_ gesture: UISwipeGestureRecognizer){
         if self.myPageControl.currentPage < 9 {
             self.myPageControl.currentPage += 1
             self.setCurrentPageLabel()
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
     }
     
     // reduce page number on swift right
-    func handleSwipeRight(gesture: UISwipeGestureRecognizer){
+    func handleSwipeRight(_ gesture: UISwipeGestureRecognizer){
 
         if self.myPageControl.currentPage != 0 {
             self.myPageControl.currentPage -= 1
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     }
     
     // set current page number label
-    private func setCurrentPageLabel(){
+    fileprivate func setCurrentPageLabel(){
         self.currentPageLabel.text = "\(self.myPageControl.currentPage + 1)"
     }
  

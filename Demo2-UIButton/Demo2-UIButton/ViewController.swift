@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     // number of click
-    var clickCount: Int!
+    var clickCount: Int = 0
     
     // outlet - clickCount label
     @IBOutlet var clickCountLabel: UILabel!
@@ -20,13 +20,10 @@ class ViewController: UIViewController {
     @IBOutlet var buttonClickMe: UIButton!
     
     // action - button
-    @IBAction func buttonClickMeAction(sender: UIButton) {
+    @IBAction func buttonClickMeAction(_ sender: UIButton) {
         self.clickCount = self.clickCount + 1
         self.clickCountLabel.text = "\(self.clickCount)"
     }
-    
-    
-    
     
     
     
@@ -39,7 +36,6 @@ class ViewController: UIViewController {
         
         // set value for click count
         self.clickCountLabel.text = "\(self.clickCount)"
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +43,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
